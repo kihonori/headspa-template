@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/user/Downloads/**)",
+      "Bash(powershell -Command \"Compress-Archive -Path 'b_rQ15wnf4p90-1771687041286\\\\*' -DestinationPath 'headspa-template.zip' -Force -CompressionLevel Optimal\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path 'b_rQ15wnf4p90-1771687041286' -Exclude 'node_modules','.next' | Compress-Archive -DestinationPath 'headspa-template.zip' -Force\")"
+    ]
+  }
+}

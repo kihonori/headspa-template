@@ -1,0 +1,106 @@
+"use client"
+
+import { motion } from "framer-motion"
+import Image from "next/image"
+import { ReserveCtaButtons } from "@/components/reserve-cta-buttons"
+
+const ease = [0.25, 0.1, 0.25, 1]
+
+export function Hero() {
+  return (
+    <section className="relative h-[90vh] overflow-hidden md:h-screen">
+      <div className="hero relative flex h-full w-full items-center justify-center overflow-hidden bg-zinc-800">
+        <Image
+          src="/images/73 画像スクリーンショット 2026-02-09 154003.png"
+          alt="ドライヘッドスパ　ゆう～MEGURI～"
+          fill
+          priority
+          className="z-0 object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/45 via-black/20 to-black/50" />
+
+        <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-6 text-center">
+          <div className="pointer-events-auto flex max-w-3xl flex-col items-center">
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.2, ease }}
+              className="mb-4 text-center text-[10px] leading-[1.85] tracking-[0.2em] text-foreground/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] sm:text-xs sm:tracking-[0.22em]"
+            >
+              頭皮から美しさを整える
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.35, ease }}
+              className="mb-6 flex flex-col items-center text-center"
+            >
+              <div className="text-[20px] tracking-[0.15em] text-gold-light/90 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+                ドライヘッドスパ専門店　ゆう
+              </div>
+              <h1 className="mt-3 text-[48px] font-medium leading-[1.2] tracking-[0.25em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:mt-4 md:text-[56px]">
+                ～MEGURI～
+              </h1>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.5, ease }}
+              className="mb-7 text-lg leading-[2] tracking-[0.24em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-xl"
+              style={{ WebkitTextStroke: "1px black", paintOrder: "stroke fill" }}
+            >
+              日常に静かな贅沢を
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.65, ease }}
+              className="mx-auto mb-6 max-w-2xl text-center text-[12px] leading-[2.2] tracking-[0.08em] text-foreground/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-sm"
+            >
+              抜け毛・薄毛・頭皮環境・疲労・不眠に寄り添い、
+              <br />
+              深いリラクゼーションと頭皮ケアを同時に叶えます。
+            </motion.p>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.74, ease }}
+              className="mb-8 flex flex-wrap items-center justify-center gap-2.5 text-[10px] tracking-[0.12em] text-foreground/88 sm:gap-3 sm:text-[11px]"
+            >
+              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">完全個室</span>
+              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">1日4名限定</span>
+              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">完全予約制</span>
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.85, ease }}
+            >
+              <div className="mb-4 space-y-1.5 text-[11px] tracking-[0.1em] text-foreground/85 sm:text-xs">
+                <p>ご予約は30秒で完了します</p>
+                <p>ご希望の日時を選ぶだけで簡単予約</p>
+                <p>LINE相談も可能</p>
+              </div>
+              <ReserveCtaButtons compact />
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.95, ease }}
+              className="mt-3 text-center text-[11px] leading-[1.9] tracking-[0.14em] text-foreground/75 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-xs"
+            >
+              ※完全予約制のため事前予約をお願いいたします
+            </motion.p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
