@@ -56,7 +56,11 @@ export function ConcernsSection() {
           </div>
         </FadeIn>
 
-        <SectionNextStep leadText="あなたに合ったメニューをご案内します">
+        <SectionNextStep
+          className="mx-auto px-4"
+          leadClassName="mx-auto max-w-4xl px-4 text-center text-2xl leading-tight break-words md:text-4xl"
+          leadText="あなたに合ったメニューをご案内します"
+        >
           <MenuScrollButton />
         </SectionNextStep>
       </div>

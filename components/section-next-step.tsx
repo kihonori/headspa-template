@@ -13,6 +13,7 @@ type Props = {
   preCtaText?: string[]
   /** ボタン直下の補助文（例：完全予約制の案内） */
   footnote?: string
+  leadClassName?: string
 }
 
 export function SectionNextStep({
@@ -22,6 +23,7 @@ export function SectionNextStep({
   className,
   preCtaText,
   footnote,
+  leadClassName,
 }: Props) {
   return (
     <FadeIn delay={0.06}>
@@ -36,7 +38,12 @@ export function SectionNextStep({
             {introText}
           </p>
         ) : null}
-        <p className="mb-10 mx-auto max-w-3xl break-words whitespace-normal text-2xl leading-tight tracking-[0.02em] text-foreground/88 md:max-w-4xl md:text-4xl lg:text-5xl sm:mb-11">
+        <p
+          className={cn(
+            "mb-10 mx-auto max-w-3xl break-words whitespace-normal text-2xl leading-tight tracking-[0.02em] text-foreground/88 md:max-w-4xl md:text-4xl lg:text-5xl sm:mb-11",
+            leadClassName,
+          )}
+        >
           {leadText}
         </p>
         {preCtaText?.length ? (
