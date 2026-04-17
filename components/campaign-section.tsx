@@ -9,11 +9,11 @@ export function CampaignSection() {
   return (
     <section
       id="reservation"
-      className="bg-secondary py-20 scroll-mt-24 lg:py-28"
+      className="bg-secondary py-16 scroll-mt-24 md:py-24 lg:py-28"
     >
-      <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
+      <div className="mx-auto max-w-4xl px-4 text-center md:px-8 lg:px-10">
         <FadeIn>
-          <h2 className="mb-12 text-base tracking-[0.5em] text-gold/80 sm:text-lg">
+          <h2 className="mb-10 text-lg leading-snug tracking-[0.2em] text-gold/80 md:text-2xl">
             特別キャンペーン
           </h2>
         </FadeIn>
@@ -39,12 +39,8 @@ export function CampaignSection() {
                 />
               </div>
             </div>
-            <p className="mt-10 text-sm leading-[2.6] tracking-[0.08em] text-foreground/70 lg:text-[15px]">
-              数量限定ではございますが
-              <br />
-              ご新規様特典をご用意しております。
-              <br />
-              この機会をぜひお見逃しなく。
+            <p className="mt-6 max-w-3xl break-words text-base leading-relaxed tracking-[0.04em] text-foreground/75 md:text-lg">
+              数量限定ではございますが、ご新規様特典をご用意しております。この機会をぜひお見逃しなく。
             </p>
           </div>
         </FadeIn>

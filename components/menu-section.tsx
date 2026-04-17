@@ -23,14 +23,14 @@ function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> })
 
 export function MenuSection() {
   return (
-    <section id="menu" className="bg-background py-10 md:py-16 lg:py-28">
+    <section id="menu" className="bg-background py-16 md:py-24 lg:py-28">
       <div className="mx-auto max-w-5xl px-4 md:px-8 lg:px-10">
         <FadeIn>
           <div className="mb-14 flex flex-col items-center lg:mb-20">
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <p className="mx-auto mt-8 max-w-3xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/75 md:text-base lg:mt-10 lg:text-[15px]">
+            <p className="mx-auto mt-6 max-w-3xl break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:max-w-4xl md:text-lg lg:mt-8">
               癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
             </p>
           </div>
@@ -90,7 +90,7 @@ export function MenuSection() {
                                 </p>
                               </>
                             )}
-                            <p className="mt-2.5 text-[11px] tracking-[0.08em] text-gold-light/85">
+                            <p className="mt-3 text-sm leading-relaxed tracking-[0.04em] text-gold-light/85 md:text-base">
                               {menu.id === "scalp"
                                 ? "頭皮ケア / 育毛目的の方におすすめ"
                                 : "深いリラックスを求める方におすすめ"}
@@ -101,7 +101,7 @@ export function MenuSection() {
                           </span>
                         </div>
 
-                        <p className="mb-6 break-words text-sm leading-relaxed tracking-[0.03em] text-muted-foreground md:text-base line-clamp-3">
+                        <p className="mb-6 break-words text-base leading-relaxed tracking-[0.02em] text-muted-foreground md:text-lg line-clamp-3">
                           {menu.descriptionParagraphs[0]}
                         </p>
                       </div>
@@ -216,9 +216,9 @@ export function MenuSection() {
 
         <FadeIn delay={0.12}>
           <div className="mx-auto mt-10 max-w-3xl border border-border/30 bg-card/70 px-5 py-8 text-center md:px-8 md:py-10">
-            <p className="text-sm tracking-[0.14em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
-            <p className="mt-2 text-2xl tracking-[0.14em] text-foreground md:text-4xl">先行予約受付中</p>
-            <p className="mx-auto mt-4 max-w-2xl break-words text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base">
+            <p className="text-sm leading-snug tracking-[0.08em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
+            <p className="mt-2 text-2xl leading-tight tracking-[0.04em] text-foreground md:text-4xl">先行予約受付中</p>
+            <p className="mx-auto mt-4 max-w-3xl break-words text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
               現在オープン前につき、Square予約にて先行予約を受付しております。先行予約限定の特典をご用意しております。ご相談はLINEでも承ります。
             </p>
             <div className="mt-6">

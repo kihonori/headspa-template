@@ -50,7 +50,7 @@ export function Evidence() {
   }
 
   return (
-    <section id="evidence" className="bg-secondary py-10 md:py-16 lg:py-36">
+    <section id="evidence" className="bg-secondary py-16 md:py-24 lg:py-36">
       <div className="mx-auto max-w-2xl px-4 md:px-8 lg:px-10">
         {/* セクションヘッダー */}
         <FadeIn>
@@ -58,7 +58,7 @@ export function Evidence() {
             <span className="text-sm font-medium tracking-[0.5em] text-gold/80 md:text-base">
               当店の育毛ケア・頭皮ケアの実績
             </span>
-            <p className="mt-7 max-w-2xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base sm:text-[15px]">
+            <p className="mt-6 max-w-3xl break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
               頭皮環境にお悩みの方へ。抜け毛・薄毛・ボリューム不足などのお悩みに対し、頭皮から整えることで変化を実感された実績をご紹介します。
             </p>
           </div>

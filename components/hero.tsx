@@ -21,7 +21,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/25 md:bg-black/50" />
 
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-6 text-center">
-          <div className="pointer-events-auto flex max-w-3xl flex-col items-center pt-20 md:pt-24">
+          <div className="pointer-events-auto flex max-w-4xl flex-col items-center pt-20 md:pt-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export function Hero() {
               <div className="text-sm tracking-[0.14em] text-gold-light/90 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] md:text-base">
                 ドライヘッドスパ専門店　ゆう
               </div>
-              <h1 className="mt-3 flex items-center justify-center gap-1 text-5xl font-medium leading-none tracking-[0.18em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] md:mt-6 md:text-7xl">
+              <h1 className="mt-3 flex items-center justify-center gap-1 text-4xl font-medium leading-tight tracking-[0.12em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] md:mt-6 md:text-7xl">
                 <span className="hidden md:block">～</span>
                 <span>MEGURI</span>
                 <span className="hidden md:block">～</span>
@@ -42,7 +42,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.42, ease }}
-              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-lg leading-relaxed tracking-[0.1em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
+              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-lg leading-relaxed tracking-[0.06em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.12em]"
             >
               頭皮から美しさを整える
             </motion.p>
@@ -51,7 +51,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease }}
-              className="mb-6 text-base leading-relaxed tracking-[0.18em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-lg md:mb-7"
+              className="mb-6 text-base leading-relaxed tracking-[0.1em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-lg md:mb-7"
               style={{ WebkitTextStroke: "1px black", paintOrder: "stroke fill" }}
             >
               日常に静かな贅沢を
@@ -61,16 +61,16 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.85, ease }}
-              className="mt-2 md:mt-4"
+              className="mt-4 md:mt-6"
             >
-              <div className="mb-5 space-y-2 text-center">
+              <div className="mb-6 space-y-2 text-center">
                 <p className="mt-6 text-center text-xl font-medium leading-tight tracking-wide text-gold-light md:text-2xl">
                   5月7日（木）NEW OPEN
                 </p>
                 <p className="mt-2 text-center text-lg font-medium leading-tight text-white md:text-xl">
                   先行予約受付中
                 </p>
-                <p className="mt-2 text-center text-sm text-white/80 md:text-base">
+                <p className="mt-2 text-center text-sm leading-relaxed text-white/80 md:text-base">
                   オープン前のため、ご予約枠には限りがございます。
                 </p>
               </div>
@@ -85,7 +85,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.95, ease }}
-              className="mt-5 text-center text-[11px] leading-[1.9] tracking-[0.14em] text-foreground/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-xs"
+              className="mt-6 text-center text-sm leading-relaxed tracking-[0.04em] text-foreground/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] md:text-base"
             >
               当店は完全個室のため、周りを気にせずリラックスしていただけます。
             </motion.p>

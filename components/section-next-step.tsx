@@ -27,7 +27,7 @@ export function SectionNextStep({
     <FadeIn delay={0.06}>
       <div
         className={cn(
-          "mx-auto mt-16 max-w-2xl border-t border-border/20 pt-14 text-center lg:mt-24 lg:pt-20",
+          "mx-auto mt-16 max-w-3xl border-t border-border/20 pt-14 text-center md:mt-20 md:pt-16 lg:mt-24 lg:pt-20",
           className,
         )}
       >
@@ -36,11 +36,11 @@ export function SectionNextStep({
             {introText}
           </p>
         ) : null}
-        <p className="mb-10 mx-auto max-w-2xl break-words text-2xl leading-snug tracking-[0.05em] text-foreground/88 md:max-w-3xl md:text-4xl sm:mb-11">
+        <p className="mb-10 mx-auto max-w-3xl break-words whitespace-normal text-2xl leading-tight tracking-[0.02em] text-foreground/88 md:max-w-4xl md:text-4xl lg:text-5xl sm:mb-11">
           {leadText}
         </p>
         {preCtaText?.length ? (
-          <div className="mb-5 space-y-1.5 break-words text-center text-sm leading-relaxed tracking-[0.1em] text-foreground/82 md:text-base">
+          <div className="mb-6 space-y-2 break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
             {preCtaText.map((line) => (
               <p key={line}>{line}</p>
             ))}
@@ -50,7 +50,7 @@ export function SectionNextStep({
           {children}
         </div>
         {footnote ? (
-          <p className="mx-auto mt-8 max-w-md break-words text-sm leading-relaxed tracking-[0.14em] text-foreground/75 md:text-base sm:mt-9">
+          <p className="mx-auto mt-8 max-w-2xl break-words text-sm leading-relaxed tracking-[0.04em] text-foreground/75 md:text-base sm:mt-9">
             {footnote}
           </p>
         ) : null}
