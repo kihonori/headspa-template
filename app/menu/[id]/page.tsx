@@ -22,11 +22,11 @@ export default async function MenuDetailPage({
     <main className="min-h-screen bg-background">
       <MenuDetailHero image={menu.image} tab={menu.tab} enTitle={menu.enTitle} isScalp={menu.id === "scalp"} />
 
-      <div className="mx-auto max-w-4xl px-5 py-16 lg:px-10 lg:py-24">
+      <div className="mx-auto max-w-4xl px-4 py-10 md:px-8 md:py-16 lg:px-10 lg:py-24">
         {/* Description */}
         <div className="mb-14">
           <div className="mx-auto h-px w-10 bg-gold/30" />
-          <div className="mt-10 space-y-5 text-center text-[13px] leading-[2.4] tracking-[0.04em] text-muted-foreground lg:text-sm">
+          <div className="mt-10 space-y-5 break-words text-center text-sm leading-relaxed tracking-[0.04em] text-muted-foreground md:text-base lg:text-sm">
             {menu.descriptionParagraphs.map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
@@ -58,7 +58,7 @@ export default async function MenuDetailPage({
           <p className="mb-6 text-center text-[10px] tracking-[0.3em] text-gold/60">
             施術内容
           </p>
-          <div className="grid grid-cols-2 gap-px bg-border/20 sm:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-px bg-border/20 md:grid-cols-3 lg:grid-cols-4">
             {menu.steps.map((step, idx) => (
               <div
                 key={step}
@@ -67,7 +67,7 @@ export default async function MenuDetailPage({
                 <span className="mr-2 text-[9px] text-muted-foreground/40">
                   {String(idx + 1).padStart(2, "0")}
                 </span>
-                <span className="text-[11px] tracking-[0.08em] text-foreground/70">
+                <span className="break-words text-sm tracking-[0.08em] text-foreground/70 md:text-base">
                   {step}
                 </span>
               </div>

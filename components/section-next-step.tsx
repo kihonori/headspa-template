@@ -32,15 +32,15 @@ export function SectionNextStep({
         )}
       >
         {introText ? (
-          <p className="mx-auto mb-8 max-w-md text-[11px] leading-[2] tracking-[0.12em] text-foreground/78 sm:mb-9 sm:text-xs sm:tracking-[0.14em]">
+          <p className="mx-auto mb-8 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em]">
             {introText}
           </p>
         ) : null}
-        <p className="mb-10 text-sm leading-[2.5] tracking-[0.1em] text-foreground/88 sm:mb-11 sm:text-[15px]">
+        <p className="mb-10 break-words text-2xl leading-tight tracking-[0.08em] text-foreground/88 md:text-4xl sm:mb-11">
           {leadText}
         </p>
         {preCtaText?.length ? (
-          <div className="mb-5 space-y-1.5 text-center text-[11px] leading-[1.9] tracking-[0.1em] text-foreground/82 sm:text-xs">
+          <div className="mb-5 space-y-1.5 break-words text-center text-sm leading-relaxed tracking-[0.1em] text-foreground/82 md:text-base">
             {preCtaText.map((line) => (
               <p key={line}>{line}</p>
             ))}
@@ -50,7 +50,7 @@ export function SectionNextStep({
           {children}
         </div>
         {footnote ? (
-          <p className="mx-auto mt-8 max-w-md text-[11px] leading-[1.9] tracking-[0.14em] text-foreground/75 sm:mt-9 sm:text-xs">
+          <p className="mx-auto mt-8 max-w-md break-words text-sm leading-relaxed tracking-[0.14em] text-foreground/75 md:text-base sm:mt-9">
             {footnote}
           </p>
         ) : null}

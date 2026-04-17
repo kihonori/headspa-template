@@ -15,18 +15,18 @@ export function Hero() {
           alt="ドライヘッドスパ　ゆう～MEGURI～"
           fill
           priority
-          className="z-0 object-cover object-center"
+          className="z-0 object-cover object-[center_10%] md:object-center"
           sizes="100vw"
         />
-        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/45 via-black/20 to-black/50" />
+        <div className="absolute inset-0 bg-black/25 md:bg-black/50" />
 
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-6 text-center">
-          <div className="pointer-events-auto flex max-w-3xl flex-col items-center">
+          <div className="pointer-events-auto flex max-w-3xl flex-col items-center pt-20 md:pt-24">
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease }}
-              className="mb-4 text-center text-[10px] leading-[1.85] tracking-[0.2em] text-foreground/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] sm:text-xs sm:tracking-[0.22em]"
+              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
             >
               頭皮から美しさを整える
             </motion.p>
@@ -40,7 +40,7 @@ export function Hero() {
               <div className="text-[20px] tracking-[0.15em] text-gold-light/90 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
                 ドライヘッドスパ専門店　ゆう
               </div>
-              <h1 className="mt-3 text-[48px] font-medium leading-[1.2] tracking-[0.25em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:mt-4 md:text-[56px]">
+              <h1 className="mt-2 hidden text-[48px] font-medium leading-[1.2] tracking-[0.25em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:mt-4 md:mt-6 md:block md:text-[56px]">
                 ～MEGURI～
               </h1>
             </motion.div>
@@ -49,7 +49,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease }}
-              className="mb-7 text-lg leading-[2] tracking-[0.24em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-xl"
+              className="mb-6 text-lg leading-[2] tracking-[0.24em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-xl md:mb-7"
               style={{ WebkitTextStroke: "1px black", paintOrder: "stroke fill" }}
             >
               日常に静かな贅沢を
@@ -59,7 +59,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.65, ease }}
-              className="mx-auto mb-6 max-w-2xl text-center text-[12px] leading-[2.2] tracking-[0.08em] text-foreground/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-sm"
+              className="mx-auto mb-6 max-w-2xl text-center text-[12px] leading-[2.1] tracking-[0.08em] text-foreground/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-sm md:leading-[2.2]"
             >
               抜け毛・薄毛・頭皮環境・疲労・不眠に寄り添い、
               <br />
@@ -70,7 +70,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.74, ease }}
-              className="mb-8 flex flex-wrap items-center justify-center gap-2.5 text-[10px] tracking-[0.12em] text-foreground/88 sm:gap-3 sm:text-[11px]"
+              className="mb-7 flex flex-wrap items-center justify-center gap-2.5 text-[10px] tracking-[0.12em] text-foreground/88 sm:gap-3 sm:text-[11px] md:mb-8"
             >
               <span className="border border-gold/35 bg-black/25 px-3 py-1.5">完全個室</span>
               <span className="border border-gold/35 bg-black/25 px-3 py-1.5">1日4名限定</span>

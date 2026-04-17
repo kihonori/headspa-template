@@ -5,15 +5,15 @@ import { ReserveCtaButtons } from "@/components/reserve-cta-buttons"
 
 export function BookingCtaSection() {
   return (
-    <section className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-3xl px-6 text-center lg:px-10">
+    <section className="bg-background py-10 md:py-16 lg:py-28">
+      <div className="mx-auto max-w-3xl px-4 text-center md:px-8 lg:px-10">
         <FadeIn>
-          <h2 className="mb-8 text-base tracking-[0.5em] text-gold/80 sm:text-lg">
+          <h2 className="mb-8 break-words text-2xl tracking-[0.16em] text-gold/80 md:text-4xl">
             ご予約はこちら
           </h2>
         </FadeIn>
         <FadeIn delay={0.08}>
-          <div className="mx-auto mb-10 max-w-xl space-y-1.5 text-[11px] leading-[1.9] tracking-[0.1em] text-foreground/82 sm:text-xs">
+          <div className="mx-auto mb-10 max-w-xl space-y-1.5 break-words text-sm leading-relaxed tracking-[0.1em] text-foreground/82 md:text-base">
             <p>ご予約は30秒で完了します</p>
             <p>ご希望の日時を選ぶだけで簡単予約</p>
             <p>頭皮や育毛のお悩みはLINEからも相談可能</p>
@@ -24,7 +24,7 @@ export function BookingCtaSection() {
           <ReserveCtaButtons />
         </FadeIn>
         <FadeIn delay={0.22}>
-          <p className="mx-auto mt-10 max-w-md text-[11px] leading-[2] tracking-[0.12em] text-foreground/70 sm:mt-12 sm:text-xs">
+          <p className="mx-auto mt-10 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/70 md:text-base sm:mt-12">
             Square予約ページにて
             <br />
             ご希望の日時を選択してご予約いただけます

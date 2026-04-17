@@ -28,14 +28,14 @@ function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> })
 
 export function MenuSection() {
   return (
-    <section id="menu" className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-5xl px-5 lg:px-10">
+    <section id="menu" className="bg-background py-10 md:py-16 lg:py-28">
+      <div className="mx-auto max-w-5xl px-4 md:px-8 lg:px-10">
         <FadeIn>
           <div className="mb-14 flex flex-col items-center lg:mb-20">
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-[2.4] tracking-[0.08em] text-foreground/75 lg:mt-10 lg:text-[15px]">
+            <p className="mx-auto mt-8 max-w-2xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/75 md:text-base lg:mt-10 lg:text-[15px]">
               癒しだけで終わらない。
               <br />
               頭皮ケア・育毛ケア・深いリラクゼーションまで、
@@ -49,8 +49,8 @@ export function MenuSection() {
           {menus.map((menu, idx) => (
             <FadeIn key={menu.id} delay={idx * 0.1}>
               <Link href={`/menu/${menu.id}`} className="group block">
-                <div className="relative overflow-hidden border border-border/30 bg-card transition-all duration-500 hover:border-gold/40">
-                  <div className="flex flex-col sm:flex-row">
+                <div className="relative h-full overflow-hidden border border-border/30 bg-card transition-all duration-500 hover:border-gold/40">
+                  <div className="flex h-full flex-col sm:flex-row">
                     {menu.image && (
                       <div className="relative h-56 w-full shrink-0 overflow-hidden sm:h-auto sm:w-64 lg:w-80">
                         <Image
@@ -70,7 +70,7 @@ export function MenuSection() {
                       </div>
                     )}
 
-                    <div className="flex flex-1 flex-col justify-between p-6 lg:p-8">
+                    <div className="flex h-full flex-1 flex-col p-6 lg:p-8">
                       <div>
                         <div className="mb-5 flex items-start justify-between gap-4">
                           <div>
@@ -82,7 +82,7 @@ export function MenuSection() {
                                 <p className="text-[11px] tracking-[0.12em] text-gold-light/90">
                                   頭皮から美しさを整える
                                 </p>
-                                <h3 className="mt-1 text-base tracking-[0.15em] text-foreground lg:text-lg">
+                                <h3 className="mt-1 break-words text-base tracking-[0.15em] text-foreground lg:text-lg">
                                   育毛ヘッドスパ
                                 </h3>
                                 <p className="mt-3 text-[9px] tracking-[0.22em] text-muted-foreground/70 sm:text-[10px] sm:tracking-[0.26em]">
@@ -91,7 +91,7 @@ export function MenuSection() {
                               </>
                             ) : (
                               <>
-                                <h3 className="text-base tracking-[0.15em] text-foreground lg:text-lg">
+                                <h3 className="break-words text-base tracking-[0.15em] text-foreground lg:text-lg">
                                   {menu.tab}
                                 </h3>
                                 <p className="mt-1 text-[11px] tracking-[0.1em] text-muted-foreground">
@@ -110,12 +110,12 @@ export function MenuSection() {
                           </span>
                         </div>
 
-                        <p className="mb-6 text-[12px] leading-[2.05] tracking-[0.03em] text-muted-foreground line-clamp-3">
+                        <p className="mb-6 break-words text-sm leading-relaxed tracking-[0.03em] text-muted-foreground md:text-base line-clamp-3">
                           {menu.descriptionParagraphs[0]}
                         </p>
                       </div>
 
-                      <div className="border-t border-border/20 pt-6">
+                      <div className="mt-auto border-t border-border/20 pt-6">
                         {menu.items.map((item) => {
                           const isScalpRow = menu.id === "scalp" && item.labelEn && item.tier
                           const tier = item.tier

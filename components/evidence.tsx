@@ -50,15 +50,15 @@ export function Evidence() {
   }
 
   return (
-    <section id="evidence" className="bg-secondary py-24 lg:py-36">
-      <div className="mx-auto max-w-2xl px-5 lg:px-10">
+    <section id="evidence" className="bg-secondary py-10 md:py-16 lg:py-36">
+      <div className="mx-auto max-w-2xl px-4 md:px-8 lg:px-10">
         {/* セクションヘッダー */}
         <FadeIn>
           <div className="mb-16 flex flex-col items-center">
-            <span className="text-base font-medium tracking-[0.5em] text-gold/80 sm:text-lg">
+            <span className="text-sm font-medium tracking-[0.5em] text-gold/80 md:text-base">
               当店の育毛ケア・頭皮ケアの実績
             </span>
-            <p className="mt-7 max-w-xl text-center text-sm leading-[2.2] tracking-[0.08em] text-foreground/80 sm:text-[15px]">
+            <p className="mt-7 max-w-xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base sm:text-[15px]">
               頭皮環境にお悩みの方へ
               <br />
               <br />
@@ -73,7 +73,7 @@ export function Evidence() {
           <div className="relative">
             {/* スライド画像 */}
             <div
-              className="relative mx-auto w-full max-w-md overflow-hidden border border-border/30 bg-zinc-800"
+              className="relative mx-auto w-full max-w-md overflow-hidden rounded-xl border border-border/30 bg-zinc-800"
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
@@ -82,12 +82,13 @@ export function Evidence() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 {slides.map((slide, i) => (
-                  <div key={i} className="relative w-full shrink-0 aspect-[3/4]">
+                  <div key={i} className="relative w-full shrink-0">
                     <Image
                       src={slide.src}
                       alt={slide.alt}
-                      fill
-                      className="object-contain"
+                      width={800}
+                      height={1000}
+                      className="w-full aspect-[4/5] object-cover rounded-xl"
                       sizes="(max-width: 768px) 100vw, 448px"
                       onError={(e) => {
                         e.currentTarget.style.display = "none"
