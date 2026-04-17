@@ -14,15 +14,9 @@ const formatDuration = (duration: string) => duration.replace("min", "分")
 
 function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> }) {
   const text = scalpTierDescription[tier]
-  const lines = text.split("\n")
   return (
-    <p className="mt-2.5 text-[10px] leading-[2] tracking-[0.06em] text-muted-foreground/78 sm:text-[11px] sm:leading-[2.05]">
-      {lines.map((line, i) => (
-        <span key={i}>
-          {i > 0 ? <br /> : null}
-          {line}
-        </span>
-      ))}
+    <p className="mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
+      {text}
     </p>
   )
 }
@@ -36,12 +30,8 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <p className="mx-auto mt-8 max-w-2xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/75 md:text-base lg:mt-10 lg:text-[15px]">
-              癒しだけで終わらない。
-              <br />
-              頭皮ケア・育毛ケア・深いリラクゼーションまで、
-              <br />
-              目的に合わせて最適な施術をご用意しています。
+            <p className="mx-auto mt-8 max-w-3xl break-words text-center text-sm leading-relaxed tracking-[0.08em] text-foreground/75 md:text-base lg:mt-10 lg:text-[15px]">
+              癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
             </p>
           </div>
         </FadeIn>
@@ -207,7 +197,7 @@ export function MenuSection() {
                                       </span>
                                     </div>
                                   </div>
-                                  <p className="mt-1.5 text-[10px] leading-[1.9] tracking-[0.06em] text-muted-foreground/75">
+                                  <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
                                     対象：頭・首・肩まわりの疲れやストレスをケアしたい方
                                   </p>
                                 </>
@@ -228,10 +218,8 @@ export function MenuSection() {
           <div className="mx-auto mt-10 max-w-3xl border border-border/30 bg-card/70 px-5 py-8 text-center md:px-8 md:py-10">
             <p className="text-sm tracking-[0.14em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
             <p className="mt-2 text-2xl tracking-[0.14em] text-foreground md:text-4xl">先行予約受付中</p>
-            <p className="mx-auto mt-4 max-w-xl break-words text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base">
-              現在オープン前につき、Square予約にて先行予約を受付しております。
-              <br />
-              先行予約限定の特典をご用意しております。ご相談はLINEでも承ります。
+            <p className="mx-auto mt-4 max-w-2xl break-words text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base">
+              現在オープン前につき、Square予約にて先行予約を受付しております。先行予約限定の特典をご用意しております。ご相談はLINEでも承ります。
             </p>
             <div className="mt-6">
               <ReserveCtaButtons webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />

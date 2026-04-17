@@ -32,29 +32,21 @@ export function ConcernsSection() {
         </FadeIn>
 
         <FadeIn delay={0.18}>
-          <p className="mx-auto mt-10 max-w-xl text-sm leading-[2.3] tracking-[0.08em] text-gold-light/90 sm:text-base">
-            その原因は
-            <br />
-            頭皮環境の乱れやめぐりの低下かもしれません。
+          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed tracking-[0.08em] text-gold-light/90 sm:text-base">
+            その原因は、頭皮環境の乱れやめぐりの低下かもしれません。
           </p>
         </FadeIn>
 
         <FadeIn delay={0.26}>
-          <p className="mx-auto mt-10 max-w-2xl text-sm leading-[2.25] tracking-[0.08em] text-foreground/88 sm:text-[15px]">
-            当店では、
-            <br />
-            頭皮環境を整えながら、
-            <br />
-            頭皮から美しさを引き出す施術をご提供しています。
+          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed tracking-[0.08em] text-foreground/88 sm:text-[15px]">
+            当店では、頭皮環境を整えながら、頭皮から美しさを引き出す施術をご提供しています。
           </p>
         </FadeIn>
 
         <FadeIn delay={0.32}>
           <div className="mx-auto mt-12 max-w-2xl border border-border/25 bg-background/30 px-6 py-8">
-            <p className="text-sm leading-[2.2] tracking-[0.12em] text-gold-light/90 sm:text-[15px]">
-              「癒し」で終わらない、
-              <br />
-              頭皮から整える本質ケア
+            <p className="text-sm leading-relaxed tracking-[0.12em] text-gold-light/90 sm:text-[15px]">
+              「癒し」で終わらない、頭皮から整える本質ケア
             </p>
             <ul className="mx-auto mt-6 flex max-w-xl flex-col gap-2.5 text-xs leading-[2] tracking-[0.08em] text-foreground/84 sm:text-sm">
               <li>・頭皮ケア × 頭皮環境改善 × 深いリラクゼーション</li>

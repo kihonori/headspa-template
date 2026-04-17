@@ -16,9 +16,7 @@ export function BottomCtaSection() {
           </div>
           <ReserveCtaButtons webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
           <p className="mx-auto mt-10 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/70 md:text-base sm:mt-12">
-            先行予約限定の特典をご用意しております。
-            <br />
-            ご予約はSquareから、ご相談はLINEからお気軽にご連絡ください。
+            先行予約限定の特典をご用意しております。ご予約はSquareから、ご相談はLINEからお気軽にご連絡ください。
           </p>
         </FadeIn>
       </div>

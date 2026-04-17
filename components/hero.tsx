@@ -42,7 +42,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.42, ease }}
-              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
+              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-lg leading-relaxed tracking-[0.1em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
             >
               頭皮から美しさを整える
             </motion.p>
@@ -51,7 +51,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease }}
-              className="mb-6 text-lg leading-[2] tracking-[0.24em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-xl md:mb-7"
+              className="mb-6 text-base leading-relaxed tracking-[0.18em] text-gold-light/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-lg md:mb-7"
               style={{ WebkitTextStroke: "1px black", paintOrder: "stroke fill" }}
             >
               日常に静かな贅沢を
@@ -64,10 +64,10 @@ export function Hero() {
               className="mt-2 md:mt-4"
             >
               <div className="mb-5 space-y-2 text-center">
-                <p className="mt-6 text-center text-xl font-medium tracking-wide text-gold-light md:text-2xl">
+                <p className="mt-6 text-center text-xl font-medium leading-tight tracking-wide text-gold-light md:text-2xl">
                   5月7日（木）NEW OPEN
                 </p>
-                <p className="mt-2 text-center text-lg font-medium text-white md:text-xl">
+                <p className="mt-2 text-center text-lg font-medium leading-tight text-white md:text-xl">
                   先行予約受付中
                 </p>
                 <p className="mt-2 text-center text-sm text-white/80 md:text-base">

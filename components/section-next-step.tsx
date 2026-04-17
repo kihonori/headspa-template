@@ -27,7 +27,7 @@ export function SectionNextStep({
     <FadeIn delay={0.06}>
       <div
         className={cn(
-          "mx-auto mt-16 max-w-xl border-t border-border/20 pt-14 text-center lg:mt-24 lg:pt-20",
+          "mx-auto mt-16 max-w-2xl border-t border-border/20 pt-14 text-center lg:mt-24 lg:pt-20",
           className,
         )}
       >
@@ -36,7 +36,7 @@ export function SectionNextStep({
             {introText}
           </p>
         ) : null}
-        <p className="mb-10 break-words text-2xl leading-tight tracking-[0.08em] text-foreground/88 md:text-4xl sm:mb-11">
+        <p className="mb-10 mx-auto max-w-2xl break-words text-2xl leading-snug tracking-[0.05em] text-foreground/88 md:max-w-3xl md:text-4xl sm:mb-11">
           {leadText}
         </p>
         {preCtaText?.length ? (
