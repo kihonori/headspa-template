@@ -73,7 +73,7 @@ export function Evidence() {
           <div className="relative">
             {/* スライド画像 */}
             <div
-              className="relative mx-auto w-full max-w-md overflow-hidden rounded-xl border border-border/30 bg-zinc-800"
+              className="relative mx-auto h-[420px] w-full max-w-md overflow-hidden rounded-xl border border-border/30 bg-zinc-800 md:h-[520px]"
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
@@ -82,20 +82,20 @@ export function Evidence() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 {slides.map((slide, i) => (
-                  <div key={i} className="relative w-full shrink-0">
+                  <div key={i} className="relative flex h-[420px] w-full shrink-0 items-center justify-center p-2 md:h-[520px] md:p-3">
                     <Image
                       src={slide.src}
                       alt={slide.alt}
                       width={800}
                       height={1000}
-                      className="w-full aspect-[4/5] object-cover rounded-xl"
+                      className="w-full h-[420px] md:h-[520px] object-contain md:object-cover rounded-xl"
                       sizes="(max-width: 768px) 100vw, 448px"
                       onError={(e) => {
                         e.currentTarget.style.display = "none"
                       }}
                     />
-                    <div className="pointer-events-none absolute bottom-3 left-3 right-3 bg-black/45 px-3 py-2 backdrop-blur-[1px] sm:bottom-4 sm:left-4 sm:right-4">
-                      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] tracking-[0.08em] text-foreground/95 sm:text-xs">
+                    <div className="pointer-events-none absolute bottom-4 left-3 right-3 bg-black/45 px-4 py-2 backdrop-blur-[1px] md:bottom-6 md:left-4 md:right-4">
+                      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[10px] tracking-[0.08em] text-foreground/95 md:text-[12px]">
                         <span className="text-gold-light/95">{slide.summary.age}</span>
                         <span>お悩み：{slide.summary.concern}</span>
                         <span>施術期間：{slide.summary.period}</span>
@@ -111,7 +111,7 @@ export function Evidence() {
               <>
                 <button
                   onClick={prev}
-                  className="absolute left-0 top-1/2 flex h-10 w-10 -translate-x-3 -translate-y-1/2 items-center justify-center border border-gold/30 bg-background/90 text-gold transition-all hover:bg-gold hover:text-background"
+                  className="absolute left-1 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center border border-gold/30 bg-background/90 text-gold transition-all hover:bg-gold hover:text-background md:left-4 md:h-10 md:w-10"
                   aria-label="前へ"
                 >
                   <svg
@@ -131,7 +131,7 @@ export function Evidence() {
                 </button>
                 <button
                   onClick={next}
-                  className="absolute right-0 top-1/2 flex h-10 w-10 translate-x-3 -translate-y-1/2 items-center justify-center border border-gold/30 bg-background/90 text-gold transition-all hover:bg-gold hover:text-background"
+                  className="absolute right-1 top-1/2 z-20 flex h-8 w-8 -translate-y-1/2 items-center justify-center border border-gold/30 bg-background/90 text-gold transition-all hover:bg-gold hover:text-background md:right-4 md:h-10 md:w-10"
                   aria-label="次へ"
                 >
                   <svg
