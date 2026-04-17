@@ -229,12 +229,12 @@ export function MenuSection() {
             <p className="text-sm tracking-[0.14em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
             <p className="mt-2 text-2xl tracking-[0.14em] text-foreground md:text-4xl">先行予約受付中</p>
             <p className="mx-auto mt-4 max-w-xl break-words text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base">
-              現在オープン前につき、LINEにて先行予約を受付しております。
+              現在オープン前につき、Square予約にて先行予約を受付しております。
               <br />
-              先行予約限定の特典をご用意しております。詳細はLINEにてご案内いたします。
+              先行予約限定の特典をご用意しております。ご相談はLINEでも承ります。
             </p>
             <div className="mt-6">
-              <ReserveCtaButtons variant="line" lineLabel="LINEで先行予約する" />
+              <ReserveCtaButtons webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
             </div>
           </div>
         </FadeIn>

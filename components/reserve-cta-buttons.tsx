@@ -16,8 +16,8 @@ export function ReserveCtaButtons({
   className,
   compact,
   variant = "both",
-  webLabel = "WEB予約（空き状況を見る）",
-  lineLabel = "LINEで空き状況を見る",
+  webLabel = "Squareで予約する",
+  lineLabel = "LINEで相談する",
 }: Props) {
   const showWeb = variant === "both" || variant === "web"
   const showLine = variant === "both" || variant === "line"

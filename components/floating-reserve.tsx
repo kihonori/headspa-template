@@ -31,7 +31,7 @@ export function FloatingReserve() {
               rel="noopener noreferrer"
               className="text-center text-[10px] font-medium leading-snug tracking-[0.1em] text-white transition-opacity hover:opacity-90 sm:text-[11px]"
             >
-              WEB予約（空き状況を見る）
+              Squareで先行予約する
             </a>
             <span className="hidden text-white/80 sm:inline">｜</span>
             <a
@@ -40,7 +40,7 @@ export function FloatingReserve() {
               rel="noopener noreferrer"
               className="text-center text-[10px] font-medium leading-snug tracking-[0.1em] text-white transition-opacity hover:opacity-90 sm:text-[11px]"
             >
-              LINEで先行予約する
+              LINEで相談する
             </a>
           </div>
         </motion.div>

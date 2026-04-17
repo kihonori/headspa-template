@@ -172,15 +172,15 @@ export function Evidence() {
 
         <SectionNextStep
           introText="5月7日（木）NEW OPENに向けて、先行予約受付中です"
-          leadText="LINEで先行予約・空き状況確認"
+          leadText="Squareで先行予約・空き状況確認"
           preCtaText={[
-            "現在オープン前につき、LINEにて先行予約を承っております。",
+            "現在オープン前につき、Square予約にて先行予約を承っております。",
             "先行予約限定の特典をご用意しております。",
-            "詳細はLINEにてご案内いたします。",
+            "ご不明点はLINEでもご相談いただけます。",
           ]}
           footnote="初めての方でも安心してご利用いただけます。まずはお気軽にご相談ください。"
         >
-          <ReserveCtaButtons compact lineLabel="LINEで先行予約する" />
+          <ReserveCtaButtons compact webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
         </SectionNextStep>
       </div>
     </section>

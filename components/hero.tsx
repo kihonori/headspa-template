@@ -74,7 +74,11 @@ export function Hero() {
                   オープン前のため、ご予約枠には限りがございます。
                 </p>
               </div>
-              <ReserveCtaButtons compact variant="line" lineLabel="LINEで先行予約する" />
+              <ReserveCtaButtons
+                compact
+                webLabel="Squareで先行予約する"
+                lineLabel="LINEで相談する"
+              />
             </motion.div>
 
             <motion.p
