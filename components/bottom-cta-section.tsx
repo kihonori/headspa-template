@@ -9,16 +9,16 @@ export function BottomCtaSection() {
       <div className="mx-auto max-w-3xl px-4 text-center md:px-8 lg:px-10">
         <FadeIn>
           <div className="mx-auto mb-8 max-w-xl space-y-1.5 break-words text-sm leading-relaxed tracking-[0.1em] text-foreground/82 md:text-base sm:mb-10">
-            <p>ご予約は30秒で完了します</p>
-            <p>ご希望の日時を選ぶだけで簡単予約</p>
-            <p>頭皮や育毛のお悩みはLINEからも相談可能</p>
+            <p className="text-gold-light/90">5月7日（木）オープン / 先行予約受付中</p>
+            <p>現在オープン前につき、LINEにて先行予約を承っております。</p>
+            <p>当店は完全個室のため、周りを気にせずリラックスしていただけます。</p>
             <p className="pt-1 text-foreground/75">※完全予約制のため事前予約をお願いいたします</p>
           </div>
-          <ReserveCtaButtons />
+          <ReserveCtaButtons lineLabel="LINEで空き状況を見る" />
           <p className="mx-auto mt-10 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/70 md:text-base sm:mt-12">
-            Square予約ページにて
+            先行予約限定の特典をご用意しております。
             <br />
-            ご希望の日時を選択してご予約いただけます
+            ご予約・ご相談はLINEからお気軽にご連絡ください。
           </p>
         </FadeIn>
       </div>

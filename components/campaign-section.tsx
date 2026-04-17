@@ -54,7 +54,7 @@ export function CampaignSection() {
           className="max-w-3xl"
           preCtaText={[
             "ご希望の日時を選ぶだけで簡単予約",
-            "LINE相談も可能",
+            "LINEで空き状況確認・先行予約も可能",
             "ご新規様はWEB予約からご利用いただけます",
           ]}
           footnote="※完全予約制のため事前予約をお願いいたします"

@@ -8,9 +8,17 @@ type Props = {
   /** 長い文言用に少し詰めたパディング */
   compact?: boolean
   variant?: "both" | "web" | "line"
+  webLabel?: string
+  lineLabel?: string
 }
 
-export function ReserveCtaButtons({ className, compact, variant = "both" }: Props) {
+export function ReserveCtaButtons({
+  className,
+  compact,
+  variant = "both",
+  webLabel = "WEB予約（空き状況を見る）",
+  lineLabel = "LINEで空き状況を見る",
+}: Props) {
   const showWeb = variant === "both" || variant === "web"
   const showLine = variant === "both" || variant === "line"
 
@@ -33,7 +41,7 @@ export function ReserveCtaButtons({ className, compact, variant = "both" }: Prop
               : "px-6 py-3 text-sm tracking-[0.12em] sm:tracking-[0.14em]",
           )}
         >
-          WEB予約（空き状況を見る）
+          {webLabel}
         </a>
       )}
       {showLine && (
@@ -48,7 +56,7 @@ export function ReserveCtaButtons({ className, compact, variant = "both" }: Prop
               : "px-6 py-3 text-sm tracking-[0.12em] sm:tracking-[0.14em]",
           )}
         >
-          LINE相談（無料）
+          {lineLabel}
         </a>
       )}
     </div>

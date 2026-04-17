@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { FadeIn } from "@/components/fade-in"
+import { ReserveCtaButtons } from "@/components/reserve-cta-buttons"
 import { ScalpTierBadge } from "@/components/scalp-tier-badge"
 import type { MenuItem } from "@/lib/menu-data"
 import { menus } from "@/lib/menu-data"
@@ -222,6 +223,21 @@ export function MenuSection() {
             </FadeIn>
           ))}
         </div>
+
+        <FadeIn delay={0.12}>
+          <div className="mx-auto mt-10 max-w-3xl border border-border/30 bg-card/70 px-5 py-8 text-center md:px-8 md:py-10">
+            <p className="text-sm tracking-[0.14em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
+            <p className="mt-2 text-2xl tracking-[0.14em] text-foreground md:text-4xl">先行予約受付中</p>
+            <p className="mx-auto mt-4 max-w-xl break-words text-sm leading-relaxed tracking-[0.08em] text-foreground/80 md:text-base">
+              現在オープン前につき、LINEにて先行予約を受付しております。
+              <br />
+              先行予約限定の特典をご用意しております。詳細はLINEにてご案内いたします。
+            </p>
+            <div className="mt-6">
+              <ReserveCtaButtons variant="line" lineLabel="LINEで先行予約する" />
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )

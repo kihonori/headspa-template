@@ -22,15 +22,6 @@ export function Hero() {
 
         <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-6 text-center">
           <div className="pointer-events-auto flex max-w-3xl flex-col items-center pt-20 md:pt-24">
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.9, delay: 0.2, ease }}
-              className="mb-5 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
-            >
-              頭皮から美しさを整える
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -48,6 +39,15 @@ export function Hero() {
             </motion.div>
 
             <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.42, ease }}
+              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
+            >
+              頭皮から美しさを整える
+            </motion.p>
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5, ease }}
@@ -57,48 +57,33 @@ export function Hero() {
               日常に静かな贅沢を
             </motion.p>
 
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.65, ease }}
-              className="mx-auto mb-6 max-w-2xl text-center text-[12px] leading-[2.1] tracking-[0.08em] text-foreground/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-sm md:leading-[2.2]"
-            >
-              抜け毛・薄毛・頭皮環境・疲労・不眠に寄り添い、
-              <br />
-              深いリラクゼーションと頭皮ケアを同時に叶えます。
-            </motion.p>
-
-            <motion.p
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.74, ease }}
-              className="mb-7 flex flex-wrap items-center justify-center gap-2.5 text-[10px] tracking-[0.12em] text-foreground/88 sm:gap-3 sm:text-[11px] md:mb-8"
-            >
-              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">完全個室</span>
-              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">1日4名限定</span>
-              <span className="border border-gold/35 bg-black/25 px-3 py-1.5">完全予約制</span>
-            </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.85, ease }}
+              className="mt-2 md:mt-4"
             >
-              <div className="mb-4 space-y-1.5 text-[11px] tracking-[0.1em] text-foreground/85 sm:text-xs">
-                <p>ご予約は30秒で完了します</p>
-                <p>ご希望の日時を選ぶだけで簡単予約</p>
-                <p>LINE相談も可能</p>
+              <div className="mb-5 space-y-2 text-center">
+                <p className="mt-6 text-center text-xl font-medium tracking-wide text-gold-light md:text-2xl">
+                  5月7日（木）NEW OPEN
+                </p>
+                <p className="mt-2 text-center text-lg font-medium text-white md:text-xl">
+                  先行予約受付中
+                </p>
+                <p className="mt-2 text-center text-sm text-white/80 md:text-base">
+                  オープン前のため、ご予約枠には限りがございます。
+                </p>
               </div>
-              <ReserveCtaButtons compact />
+              <ReserveCtaButtons compact variant="line" lineLabel="LINEで先行予約する" />
             </motion.div>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.95, ease }}
-              className="mt-3 text-center text-[11px] leading-[1.9] tracking-[0.14em] text-foreground/75 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-xs"
+              className="mt-5 text-center text-[11px] leading-[1.9] tracking-[0.14em] text-foreground/80 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-xs"
             >
-              ※完全予約制のため事前予約をお願いいたします
+              当店は完全個室のため、周りを気にせずリラックスしていただけます。
             </motion.p>
           </div>
         </div>

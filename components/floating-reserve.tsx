@@ -40,7 +40,7 @@ export function FloatingReserve() {
               rel="noopener noreferrer"
               className="text-center text-[10px] font-medium leading-snug tracking-[0.1em] text-white transition-opacity hover:opacity-90 sm:text-[11px]"
             >
-              LINE相談（無料）
+              LINEで先行予約する
             </a>
           </div>
         </motion.div>

@@ -73,7 +73,7 @@ export function Evidence() {
           <div className="relative">
             {/* スライド画像 */}
             <div
-              className="relative mx-auto h-[420px] w-full max-w-md overflow-hidden rounded-xl border border-border/30 bg-zinc-800 md:h-[520px]"
+              className="relative mx-auto h-[420px] w-full max-w-md overflow-hidden rounded-xl border border-border/30 bg-zinc-800 md:h-auto"
               onTouchStart={handleTouchStart}
               onTouchEnd={handleTouchEnd}
             >
@@ -82,7 +82,7 @@ export function Evidence() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 {slides.map((slide, i) => (
-                  <div key={i} className="relative flex h-[420px] w-full shrink-0 items-center justify-center p-2 md:h-[520px] md:p-3">
+                  <div key={i} className="relative flex h-[420px] w-full shrink-0 items-center justify-center p-2 md:h-auto md:p-3">
                     <Image
                       src={slide.src}
                       alt={slide.alt}
@@ -171,16 +171,16 @@ export function Evidence() {
         </FadeIn>
 
         <SectionNextStep
-          introText="変化を実感したい方は、今すぐご予約ください"
-          leadText="ご予約はこちら"
+          introText="5月7日（木）NEW OPENに向けて、先行予約受付中です"
+          leadText="LINEで先行予約・空き状況確認"
           preCtaText={[
-            "ご予約は30秒で完了します",
-            "ご希望の日時を選ぶだけで簡単予約",
-            "頭皮や育毛のお悩みはLINEからも相談可能",
+            "現在オープン前につき、LINEにて先行予約を承っております。",
+            "先行予約限定の特典をご用意しております。",
+            "詳細はLINEにてご案内いたします。",
           ]}
-          footnote="※完全予約制のため事前予約をお願いいたします"
+          footnote="初めての方でも安心してご利用いただけます。まずはお気軽にご相談ください。"
         >
-          <ReserveCtaButtons compact />
+          <ReserveCtaButtons compact lineLabel="LINEで先行予約する" />
         </SectionNextStep>
       </div>
     </section>
