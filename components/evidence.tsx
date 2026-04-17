@@ -88,7 +88,7 @@ export function Evidence() {
                       alt={slide.alt}
                       width={800}
                       height={1000}
-                      className="w-full h-[420px] md:h-[520px] object-contain md:object-cover rounded-xl"
+                      className="w-full h-[420px] md:h-auto object-contain rounded-xl"
                       sizes="(max-width: 768px) 100vw, 448px"
                       onError={(e) => {
                         e.currentTarget.style.display = "none"
