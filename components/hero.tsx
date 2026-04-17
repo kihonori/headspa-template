@@ -26,7 +26,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.2, ease }}
-              className="mb-4 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
+              className="mb-5 rounded-sm bg-black/30 px-3 py-1.5 text-center text-xl leading-relaxed tracking-[0.12em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] md:mb-4 md:bg-transparent md:px-0 md:py-0 md:text-3xl md:tracking-[0.2em]"
             >
               頭皮から美しさを整える
             </motion.p>
@@ -35,13 +35,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.35, ease }}
-              className="mb-6 flex flex-col items-center text-center"
+              className="mb-7 flex flex-col items-center text-center md:mb-6"
             >
-              <div className="text-[20px] tracking-[0.15em] text-gold-light/90 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
+              <div className="text-sm tracking-[0.14em] text-gold-light/90 opacity-90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] md:text-base">
                 ドライヘッドスパ専門店　ゆう
               </div>
-              <h1 className="mt-2 hidden text-[48px] font-medium leading-[1.2] tracking-[0.25em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:mt-4 md:mt-6 md:block md:text-[56px]">
-                ～MEGURI～
+              <h1 className="mt-3 flex items-center justify-center gap-1 text-5xl font-medium leading-none tracking-[0.18em] text-gold-light/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] md:mt-6 md:text-7xl">
+                <span className="hidden md:block">～</span>
+                <span>MEGURI</span>
+                <span className="hidden md:block">～</span>
               </h1>
             </motion.div>
 
