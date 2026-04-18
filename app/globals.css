@@ -95,10 +95,10 @@ html {
 }
 
 .text-beauty {
-  max-width: 680px;
+  max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.9;
+  line-height: 1.95;
   letter-spacing: 0.04em;
   font-size: 14px;
 }
@@ -107,5 +107,18 @@ html {
   .text-beauty {
     font-size: 16px;
     line-height: 2;
+  }
+}
+
+.text-beauty-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .text-beauty-wrap {
+    gap: 1.5rem;
   }
 }
