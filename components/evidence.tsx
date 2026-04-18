@@ -58,9 +58,11 @@ export function Evidence() {
             <span className="text-sm font-medium tracking-[0.5em] text-gold/80 md:text-base">
               当店の育毛ケア・頭皮ケアの実績
             </span>
-            <p className="mt-6 max-w-3xl break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
-              頭皮環境にお悩みの方へ。抜け毛・薄毛・ボリューム不足などのお悩みに対し、頭皮から整えることで変化を実感された実績をご紹介します。
-            </p>
+            <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6">
+              <p className="text-beauty break-words text-foreground/80">
+                頭皮環境にお悩みの方へ。抜け毛・薄毛・ボリューム不足などのお悩みに対し、頭皮から整えることで変化を実感された実績をご紹介します。
+              </p>
+            </div>
           </div>
         </FadeIn>
 

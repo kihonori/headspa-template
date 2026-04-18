@@ -32,15 +32,14 @@ export function ConcernsSection() {
         </FadeIn>
 
         <FadeIn delay={0.18}>
-          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed tracking-[0.08em] text-gold-light/90 sm:text-base">
-            その原因は、頭皮環境の乱れやめぐりの低下かもしれません。
-          </p>
-        </FadeIn>
-
-        <FadeIn delay={0.26}>
-          <p className="mx-auto mt-10 max-w-2xl text-sm leading-relaxed tracking-[0.08em] text-foreground/88 sm:text-[15px]">
-            当店では、頭皮環境を整えながら、頭皮から美しさを引き出す施術をご提供しています。
-          </p>
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-10">
+            <p className="text-beauty break-words text-gold-light/90">
+              その原因は、頭皮環境の乱れやめぐりの低下かもしれません。
+            </p>
+            <p className="text-beauty break-words text-foreground/88">
+              当店では、頭皮環境を整えながら、頭皮から美しさを引き出す施術をご提供しています。
+            </p>
+          </div>
         </FadeIn>
 
         <FadeIn delay={0.32}>

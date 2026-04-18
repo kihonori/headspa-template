@@ -14,15 +14,9 @@ const formatDuration = (duration: string) => duration.replace("min", "分")
 
 function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> }) {
   const text = scalpTierDescription[tier]
-  const lines = text.split("\n")
   return (
-    <p className="mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
-      {lines.map((line, i) => (
-        <span key={i}>
-          {i > 0 ? <br /> : null}
-          {line}
-        </span>
-      ))}
+    <p className="mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words whitespace-pre-line">
+      {text}
     </p>
   )
 }
@@ -36,11 +30,11 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="mx-auto mt-6 w-full max-w-[38rem] text-center md:max-w-[40rem] lg:mt-8">
-              <p className="break-words text-sm leading-[2] tracking-[0.04em] text-foreground/80 sm:text-[15px] md:text-base md:leading-[1.95] lg:text-lg lg:leading-[1.9]">
+            <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6 lg:mt-8">
+              <p className="text-beauty break-words text-foreground/80">
                 癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
               </p>
-              <p className="mt-7 break-words text-sm leading-[2] tracking-[0.04em] text-foreground/80 sm:text-[15px] md:text-base md:leading-[1.95] lg:text-lg lg:leading-[1.9]">
+              <p className="text-beauty break-words text-foreground/80">
                 当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
                 初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
               </p>

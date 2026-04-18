@@ -99,7 +99,7 @@ export function InformationCarousel() {
                       <h3 className="mb-4 text-sm leading-relaxed tracking-[0.15em] text-foreground">
                         {card.title}
                       </h3>
-                      <p className="mb-6 flex-1 text-[11px] leading-[2.2] tracking-[0.03em] text-muted-foreground">
+                      <p className="text-beauty mb-6 flex-1 break-words text-muted-foreground">
                         {card.text}
                       </p>
                       {card.link && (

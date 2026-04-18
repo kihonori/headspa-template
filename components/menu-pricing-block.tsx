@@ -30,15 +30,9 @@ function LevelTitle({ text }: { text: string }) {
 
 function TierDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> }) {
   const text = scalpTierDescription[tier]
-  const lines = text.split("\n")
   return (
-    <p className="mt-5 max-w-md text-[10px] leading-[2.05] tracking-[0.07em] text-muted-foreground/78 sm:mx-0 sm:mr-auto sm:text-[11px] sm:leading-[2.1]">
-      {lines.map((line, i) => (
-        <span key={i}>
-          {i > 0 ? <br /> : null}
-          {line}
-        </span>
-      ))}
+    <p className="mt-5 max-w-md text-[10px] leading-[2.05] tracking-[0.07em] text-muted-foreground/78 whitespace-pre-line sm:mx-0 sm:mr-auto sm:text-[11px] sm:leading-[2.1]">
+      {text}
     </p>
   )
 }

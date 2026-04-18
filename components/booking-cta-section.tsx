@@ -13,7 +13,7 @@ export function BookingCtaSection() {
           </h2>
         </FadeIn>
         <FadeIn delay={0.08}>
-          <div className="mx-auto mb-10 max-w-xl space-y-1.5 break-words text-sm leading-relaxed tracking-[0.1em] text-foreground/82 md:text-base">
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-10">
             <p>ご予約は30秒で完了します</p>
             <p>ご希望の日時を選ぶだけで簡単予約</p>
             <p>頭皮や育毛のお悩みはLINEからも相談可能</p>
@@ -24,11 +24,11 @@ export function BookingCtaSection() {
           <ReserveCtaButtons />
         </FadeIn>
         <FadeIn delay={0.22}>
-          <p className="mx-auto mt-10 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/70 md:text-base sm:mt-12">
-            Square予約ページにて
-            <br />
-            ご希望の日時を選択してご予約いただけます
-          </p>
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-10 sm:mt-12">
+            <p className="text-beauty break-words text-foreground/70">
+              Square予約ページにてご希望の日時を選択してご予約いただけます
+            </p>
+          </div>
         </FadeIn>
       </div>
     </section>

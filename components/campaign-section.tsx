@@ -39,9 +39,11 @@ export function CampaignSection() {
                 />
               </div>
             </div>
-            <p className="mt-6 max-w-3xl break-words text-base leading-relaxed tracking-[0.04em] text-foreground/75 md:text-lg">
-              数量限定ではございますが、ご新規様特典をご用意しております。この機会をぜひお見逃しなく。
-            </p>
+            <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6">
+              <p className="text-beauty break-words text-foreground/75">
+                数量限定ではございますが、ご新規様特典をご用意しております。この機会をぜひお見逃しなく。
+              </p>
+            </div>
           </div>
         </FadeIn>
 

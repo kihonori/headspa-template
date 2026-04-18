@@ -41,28 +41,20 @@ export function About() {
                 sizes="(max-width: 640px) 100vw, 576px"
               />
             </div>
-            <p className="mx-auto max-w-xl text-sm leading-[2.5] tracking-[0.08em] text-foreground/78 lg:text-[15px]">
-              {"\u798f\u5ca1\u5e02\u6771\u533a\u306e\u5b8c\u5168\u500b\u5ba4"}
-              <br />
-              {"\u30c9\u30e9\u30a4\u30d8\u30c3\u30c9\u30b9\u30d1\u5c02\u9580\u5e97 \u3086\u3046\uff5eMEGURI\uff5e"}
-              <br />
-              <br />
-              {"\u6c34\u3084\u30aa\u30a4\u30eb\u3092\u4f7f\u308f\u306a\u3044\u5b8c\u5168\u30c9\u30e9\u30a4\u65bd\u8853\u3067\u3001"}
-              <br />
-              {"\u982d\u76ae\u30b1\u30a2\u30fb\u80b2\u6bdb\u30b1\u30a2\u30fb\u6df1\u3044\u30ea\u30e9\u30af\u30bc\u30fc\u30b7\u30e7\u30f3\u3092"}
-              <br />
-              {"\u4e01\u5be7\u306b\u30b5\u30dd\u30fc\u30c8\u3044\u305f\u3057\u307e\u3059\u3002"}
-              <br />
-              <br />
-              {"1\u65e54\u540d\u69d8\u9650\u5b9a\u3001\u5b8c\u5168\u4e88\u7d04\u5236\u3002"}
-              <br />
-              {"\u843d\u3061\u7740\u3044\u305f\u7a7a\u9593\u3067\u3001\u3086\u3063\u304f\u308a\u304a\u904e\u3054\u3057\u304f\u3060\u3055\u3044\u3002"}
-              <br />
-              <br />
-              {"\u5f53\u5e97\u306f\u300c\u982d\u76ae\u304b\u3089\u7f8e\u3057\u3055\u3092\u6574\u3048\u308b\u300d\u3092\u30b3\u30f3\u30bb\u30d7\u30c8\u306b\u3001"}
-              <br />
-              {"\u7652\u3057\u3060\u3051\u3067\u7d42\u308f\u3089\u306a\u3044\u65bd\u8853\u3092\u3054\u63d0\u4f9b\u3057\u3066\u3044\u307e\u3059\u3002"}
-            </p>
+            <div className="text-beauty space-y-4 md:space-y-6 text-center">
+              <p className="text-beauty break-words text-foreground/78">
+                福岡市東区の完全個室ドライヘッドスパ専門店 ゆう〜MEGURI〜。
+              </p>
+              <p className="text-beauty break-words text-foreground/78">
+                水やオイルを使わない完全ドライ施術で、頭皮ケア・育毛ケア・深いリラクゼーションを丁寧にサポートいたします。
+              </p>
+              <p className="text-beauty break-words text-foreground/78">
+                1日4名様限定、完全予約制。落ち着いた空間で、ゆっくりお過ごしください。
+              </p>
+              <p className="text-beauty break-words text-foreground/78">
+                当店は「頭皮から美しさを整える」をコンセプトに、癒しだけで終わらない施術をご提供しています。
+              </p>
+            </div>
           </div>
         </FadeIn>
 

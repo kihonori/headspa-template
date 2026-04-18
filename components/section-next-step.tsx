@@ -34,9 +34,9 @@ export function SectionNextStep({
         )}
       >
         {introText ? (
-          <p className="mx-auto mb-8 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em]">
-            {introText}
-          </p>
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-8 sm:mb-9">
+            <p className="text-beauty break-words text-foreground/78">{introText}</p>
+          </div>
         ) : null}
         <p
           className={cn(
@@ -47,9 +47,11 @@ export function SectionNextStep({
           {leadText}
         </p>
         {preCtaText?.length ? (
-          <div className="mb-6 space-y-2 break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-6">
             {preCtaText.map((line) => (
-              <p key={line}>{line}</p>
+              <p key={line} className="text-beauty break-words text-foreground/80">
+                {line}
+              </p>
             ))}
           </div>
         ) : null}
@@ -57,9 +59,9 @@ export function SectionNextStep({
           {children}
         </div>
         {footnote ? (
-          <p className="mx-auto mt-8 max-w-2xl break-words text-sm leading-relaxed tracking-[0.04em] text-foreground/75 md:text-base sm:mt-9">
-            {footnote}
-          </p>
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-8 sm:mt-9">
+            <p className="text-beauty break-words text-foreground/75">{footnote}</p>
+          </div>
         ) : null}
       </div>
     </FadeIn>

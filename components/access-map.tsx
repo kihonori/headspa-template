@@ -26,20 +26,20 @@ export function AccessMap() {
         </FadeIn>
 
         <FadeIn delay={0.1}>
-          <div className="mb-10 flex flex-col items-center text-center">
-            <p className="mb-1 break-words text-sm tracking-[0.12em] text-foreground/80 md:text-base">
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-10">
+            <p className="text-beauty break-words text-foreground/80">
               ドライヘッドスパ　ゆう～MEGURI～
             </p>
-            <p className="text-sm leading-relaxed tracking-[0.08em] text-muted-foreground md:text-base">
+            <p className="text-beauty break-words text-muted-foreground">
               福岡市東区唐原2丁目10-10
             </p>
-            <p className="mt-1 text-sm tracking-[0.08em] text-muted-foreground md:text-base">
+            <p className="text-beauty break-words text-muted-foreground">
               西鉄 宮地岳線 唐原駅 徒歩5分
             </p>
-            <p className="mt-3 text-sm tracking-[0.08em] text-muted-foreground md:text-base">
+            <p className="text-beauty break-words text-muted-foreground">
               TEL: 080-6213-9847
             </p>
-            <p className="mt-1 text-sm tracking-[0.08em] text-muted-foreground md:text-base">
+            <p className="text-beauty break-words text-muted-foreground">
               店舗前及びとなりアパートの①番駐車場
             </p>
           </div>

@@ -16,12 +16,14 @@ export function HomeCareSection() {
           <h2 className="mt-6 font-serif text-lg font-light tracking-[0.14em] text-foreground sm:text-xl md:text-2xl">
             施術の効果を、日常へ
           </h2>
-          <p className="mx-auto mt-8 max-w-xl text-sm leading-[2] tracking-[0.06em] text-foreground/78 md:text-base">
-            サロンでのケアとあわせてご活用いただけるホームケア商品をご用意しております。頭皮環境を整え、育毛ケアにもつながるよう、成分と使い心地にこだわったラインです。
-          </p>
-          <p className="mx-auto mt-6 max-w-xl text-sm leading-[2] tracking-[0.06em] text-foreground/78 md:text-base">
-            施術後の持続感を高め、ご自宅でも心地よいリチュアルとしてお使いいただけます。
-          </p>
+          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-8">
+            <p className="text-beauty break-words text-foreground/78">
+              サロンでのケアとあわせてご活用いただけるホームケア商品をご用意しております。頭皮環境を整え、育毛ケアにもつながるよう、成分と使い心地にこだわったラインです。
+            </p>
+            <p className="text-beauty break-words text-foreground/78">
+              施術後の持続感を高め、ご自宅でも心地よいリチュアルとしてお使いいただけます。
+            </p>
+          </div>
           <p className="mx-auto mt-10 max-w-lg border-t border-border/30 pt-8 text-xs leading-[1.95] tracking-[0.08em] text-muted-foreground/90 md:text-sm">
             商品のご案内は、ご希望を伺ったうえで行います。無理な販売やしつこいお声がけはいたしませんので、どうぞご安心ください。
           </p>

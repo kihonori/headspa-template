@@ -83,9 +83,9 @@ export function Faq() {
                     <span>{faq.q}</span>
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="pb-6 pl-6 text-xs leading-[2.2] tracking-[0.03em] text-muted-foreground md:pl-7 lg:text-[13px]">
+                <AccordionContent className="pb-6 pl-6 text-muted-foreground md:pl-7">
                   <span className="mr-2 shrink-0 text-[11px] tracking-[0.1em] text-gold/40">A.</span>
-                  {faq.a}
+                  <span className="text-beauty break-words">{faq.a}</span>
                 </AccordionContent>
               </AccordionItem>
             ))}
