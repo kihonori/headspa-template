@@ -9,6 +9,9 @@ export default function Header() {
       <h1 className="text-xl font-bold text-gold">
         {title}
       </h1>
+      <p className="mt-4 text-sm text-gray-300">
+        施術の効果を長く実感していただくために、ホームケア商品もご用意しております。
+      </p>
     </header>
   );
 }

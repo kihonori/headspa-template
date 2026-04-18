@@ -14,9 +14,15 @@ const formatDuration = (duration: string) => duration.replace("min", "分")
 
 function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> }) {
   const text = scalpTierDescription[tier]
+  const lines = text.split("\n")
   return (
     <p className="mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
-      {text}
+      {lines.map((line, i) => (
+        <span key={i}>
+          {i > 0 ? <br /> : null}
+          {line}
+        </span>
+      ))}
     </p>
   )
 }
@@ -30,9 +36,14 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <p className="mx-auto mt-6 max-w-3xl break-words text-center text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:max-w-4xl md:text-lg lg:mt-8">
-              癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
-            </p>
+            <div className="mx-auto mt-6 w-full max-w-3xl text-center md:max-w-4xl lg:mt-8">
+              <p className="break-words text-sm leading-[1.95] tracking-[0.04em] text-foreground/80 md:text-base md:leading-[1.82] lg:text-lg lg:leading-[1.78]">
+                癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
+              </p>
+              <p className="mt-3.5 break-words text-sm leading-[1.95] tracking-[0.04em] text-foreground/80 md:mt-4 md:text-base md:leading-[1.82] lg:text-lg lg:leading-[1.78]">
+                当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
+              </p>
+            </div>
           </div>
         </FadeIn>
 
@@ -111,14 +122,14 @@ export function MenuSection() {
                           const isScalpRow = menu.id === "scalp" && item.labelEn && item.tier
                           const tier = item.tier
                           const rowPad =
-                            isScalpRow && tier === "premium"
+                            isScalpRow && tier === "standard"
                               ? "py-5 sm:py-6"
                               : isScalpRow
                                 ? "py-4"
                                 : "py-3.5"
                           const rowBg =
-                            isScalpRow && tier === "premium"
-                              ? "rounded-sm bg-[#262422]/80 px-1 -mx-1 sm:px-2 sm:-mx-2"
+                            isScalpRow && tier === "standard"
+                              ? "rounded-sm border border-[#C9A96E]/25 bg-[#262422]/80 px-1 -mx-1 sm:px-2 sm:-mx-2"
                               : ""
 
                           return (
@@ -145,9 +156,9 @@ export function MenuSection() {
                                   <div className="mt-4 flex flex-wrap items-baseline gap-x-2 gap-y-1 sm:justify-end">
                                     <span
                                       className={
-                                        tier === "premium"
+                                        tier === "standard"
                                           ? "text-lg font-medium tabular-nums tracking-[0.08em] text-[#C9A96E] sm:text-xl"
-                                          : tier === "standard"
+                                          : tier === "premium"
                                             ? "text-base font-light tabular-nums tracking-[0.07em] text-foreground/88"
                                             : "text-sm font-light tabular-nums tracking-[0.06em] text-muted-foreground/88"
                                       }
@@ -156,9 +167,9 @@ export function MenuSection() {
                                     </span>
                                     <span
                                       className={
-                                        tier === "premium"
+                                        tier === "standard"
                                           ? "text-[10px] font-medium tracking-[0.1em] text-[#C9A96E]/90"
-                                          : tier === "standard"
+                                          : tier === "premium"
                                             ? "text-[10px] tracking-[0.08em] text-foreground/65"
                                             : "text-[9px] tracking-[0.08em] text-muted-foreground/55"
                                       }

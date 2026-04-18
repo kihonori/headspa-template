@@ -9,6 +9,7 @@ import { Evidence } from "@/components/evidence"
 import { Faq } from "@/components/faq"
 import { AccessMap } from "@/components/access-map"
 import { CategoryLinks } from "@/components/category-links"
+import { HomeCareSection } from "@/components/home-care-section"
 import { BottomCtaSection } from "@/components/bottom-cta-section"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Faq />
       <AccessMap />
       <CategoryLinks />
+      <HomeCareSection />
       <BottomCtaSection />
       <SiteFooter />
     </main>

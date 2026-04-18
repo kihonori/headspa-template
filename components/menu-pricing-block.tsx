@@ -50,12 +50,12 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
   const hasLuxuryLines = Boolean(item.labelEn && tier)
 
   const rowLayout =
-    tier === "premium"
+    tier === "standard"
       ? "flex w-full min-w-0 flex-col gap-10 px-7 py-14 sm:flex-row sm:items-stretch sm:justify-between sm:gap-16 sm:px-14 sm:py-16"
       : "flex w-full min-w-0 flex-col gap-9 px-6 py-11 sm:flex-row sm:items-stretch sm:justify-between sm:gap-12 sm:px-11 sm:py-12"
 
   const rowSurface =
-    tier === "premium"
+    tier === "standard"
       ? "border-l-2 border-[#C9A96E]/30 bg-[#262422]"
       : "bg-card"
 
@@ -65,18 +65,15 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
     "text-[8px] font-medium uppercase tracking-[0.16em] text-muted-foreground/65 sm:text-[9px] sm:tracking-[0.18em]"
 
   const lineJpCls =
-    tier === "premium"
+    tier === "standard"
       ? "mt-3.5 text-[15px] font-medium leading-[1.8] tracking-[0.075em] text-foreground sm:text-[16px] sm:tracking-[0.08em]"
-      : tier === "standard"
+      : tier === "premium"
         ? "mt-3 text-[13px] font-medium leading-[1.75] tracking-[0.06em] text-foreground/92 sm:text-[14px]"
         : tier === "light"
           ? "mt-3 text-[12px] font-normal leading-[1.72] tracking-[0.05em] text-muted-foreground sm:text-[13px]"
           : "mt-3 text-sm leading-relaxed tracking-[0.06em] text-foreground"
 
-  const badgeWrapCls =
-    tier === "premium"
-      ? "flex flex-wrap items-center justify-center gap-2 sm:justify-start"
-      : "flex flex-wrap items-center justify-center gap-2 sm:justify-start"
+  const badgeWrapCls = "flex flex-wrap items-center justify-center gap-2 sm:justify-start"
 
   return (
     <div className={`${rowLayout} ${rowSurface} ${borderBottom}`}>
@@ -88,7 +85,7 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
                 <ScalpTierBadge key={label}>{label}</ScalpTierBadge>
               ))}
             </div>
-            <p className={`${lineEnCls} ${tier === "premium" ? "mt-6" : "mt-5"}`}>
+            <p className={`${lineEnCls} ${tier === "standard" ? "mt-6" : "mt-5"}`}>
               {item.labelEn}
             </p>
             <p className={`break-keep ${lineJpCls}`}>
@@ -108,7 +105,7 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
 
       <div
         className={`flex w-full shrink-0 flex-col items-center sm:w-auto sm:items-end sm:justify-center sm:border-l sm:border-border/15 ${
-          tier === "premium" ? "gap-5 sm:min-w-[12.5rem] sm:pl-12" : "gap-4 sm:min-w-[11rem] sm:pl-9"
+          tier === "standard" ? "gap-5 sm:min-w-[12.5rem] sm:pl-12" : "gap-4 sm:min-w-[11rem] sm:pl-9"
         }`}
       >
         <span className="text-[10px] tabular-nums tracking-[0.14em] text-muted-foreground/55">
@@ -120,9 +117,9 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
             <div className="flex flex-wrap items-baseline justify-center gap-x-2 sm:justify-end">
               <span
                 className={
-                  tier === "premium"
+                  tier === "standard"
                     ? "font-medium tabular-nums tracking-[0.11em] text-[2.125rem] leading-none text-[#C9A96E] sm:text-[2.375rem]"
-                    : tier === "standard"
+                    : tier === "premium"
                       ? "font-light tabular-nums tracking-[0.09em] text-[1.5rem] leading-none text-foreground/88 sm:text-[1.5625rem]"
                       : "font-light tabular-nums tracking-[0.08em] text-[1.2rem] leading-none text-muted-foreground/88 sm:text-[1.3rem]"
                 }
@@ -131,9 +128,9 @@ function ScalpPricingRow({ item, isLast }: { item: MenuItem; isLast: boolean }) 
               </span>
               <span
                 className={
-                  tier === "premium"
+                  tier === "standard"
                     ? "text-sm font-medium tracking-[0.12em] text-[#C9A96E]/95"
-                    : tier === "standard"
+                    : tier === "premium"
                       ? "text-xs font-light tracking-[0.1em] text-foreground/72"
                       : "text-[10px] font-light tracking-[0.09em] text-muted-foreground/65"
                 }
