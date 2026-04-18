@@ -36,11 +36,11 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="mx-auto mt-6 w-full max-w-2xl text-center md:max-w-2xl lg:mt-8">
-              <p className="break-words text-sm leading-loose tracking-[0.04em] text-foreground/80 md:text-base md:leading-loose lg:text-lg lg:leading-loose">
+            <div className="mx-auto mt-6 w-full max-w-[38rem] text-center md:max-w-[40rem] lg:mt-8">
+              <p className="break-words text-sm leading-[2] tracking-[0.04em] text-foreground/80 sm:text-[15px] md:text-base md:leading-[1.95] lg:text-lg lg:leading-[1.9]">
                 癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
               </p>
-              <p className="mt-6 break-words text-sm leading-loose tracking-[0.04em] text-foreground/80 md:text-base md:leading-loose lg:text-lg lg:leading-loose">
+              <p className="mt-7 break-words text-sm leading-[2] tracking-[0.04em] text-foreground/80 sm:text-[15px] md:text-base md:leading-[1.95] lg:text-lg lg:leading-[1.9]">
                 当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
                 初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
               </p>
