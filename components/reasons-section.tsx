@@ -13,7 +13,7 @@ const reasons = [
 
 export function ReasonsSection() {
   return (
-    <section className="bg-background py-20 lg:py-28">
+    <section className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-5xl px-5 lg:px-10">
         <FadeIn>
           <div className="mb-14 flex flex-col items-center lg:mb-16">
@@ -23,11 +23,11 @@ export function ReasonsSection() {
             <h2 className="mt-6 text-center text-lg leading-[1.8] tracking-[0.12em] text-foreground sm:text-xl">
               ゆう～MEGURI～が選ばれる理由
             </h2>
-            <div className="text-beauty-wrap mt-6">
-              <p className="text-beauty text-foreground/80">
+            <div className="text-lp space-y-4 mt-6">
+              <p className="text-lp text-foreground/80">
                 頭皮から美しさを整える本質ケアを、完全個室の落ち着いた空間でご提供しています。
               </p>
-              <p className="text-beauty text-foreground/80">
+              <p className="text-lp text-foreground/80">
                 水やオイルを使わないドライ施術だからこそ、頭皮ケアと深いリラクゼーションを両立できます。
               </p>
             </div>

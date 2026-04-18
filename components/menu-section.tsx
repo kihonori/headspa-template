@@ -23,18 +23,18 @@ function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> })
 
 export function MenuSection() {
   return (
-    <section id="menu" className="bg-background py-16 md:py-24 lg:py-28">
+    <section id="menu" className="bg-background py-16 md:py-24">
       <div className="mx-auto max-w-5xl px-4 md:px-8 lg:px-10">
         <FadeIn>
           <div className="mb-14 flex flex-col items-center lg:mb-20">
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="text-beauty-wrap mt-6 lg:mt-8">
-              <p className="text-beauty text-foreground/80">
+            <div className="text-lp space-y-4 mt-6">
+              <p className="text-lp text-foreground/80">
                 癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
               </p>
-              <p className="text-beauty text-foreground/80">
+              <p className="text-lp text-foreground/80">
                 当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
                 初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
               </p>

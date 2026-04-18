@@ -39,13 +39,13 @@ export function Hero() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.42, ease }}
-              className="text-beauty-wrap mt-7 sm:mt-8 md:mt-10"
+              className="text-lp space-y-4 mt-6"
             >
-              <p className="text-beauty text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
+              <p className="text-lp text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
                 頭皮から美しさを整え、髪も心も満たされるドライヘッドスパ専門店
               </p>
               <p
-                className="text-beauty font-normal text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
+                className="text-lp font-normal text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
                 style={{ WebkitTextStroke: "0.45px rgba(0,0,0,0.35)", paintOrder: "stroke fill" }}
               >
                 日常に静かな贅沢を
@@ -80,12 +80,12 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.58, ease }}
-              className="text-beauty-wrap mt-8 md:mt-10"
+              className="text-lp space-y-4 mt-6"
             >
-              <p className="text-beauty font-semibold text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+              <p className="text-lp font-semibold text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
                 5月7日（木）NEW OPEN
               </p>
-              <p className="text-beauty font-semibold text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
+              <p className="text-lp font-semibold text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
                 先行予約受付中
               </p>
             </motion.div>
