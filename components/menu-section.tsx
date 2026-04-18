@@ -15,7 +15,7 @@ const formatDuration = (duration: string) => duration.replace("min", "分")
 function ScalpCardDescription({ tier }: { tier: NonNullable<MenuItem["tier"]> }) {
   const text = scalpTierDescription[tier]
   return (
-    <p className="mt-3 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words whitespace-pre-line">
+    <p className="mt-3 break-words whitespace-pre-line text-sm leading-relaxed text-muted-foreground/80 sm:text-base">
       {text}
     </p>
   )
@@ -30,11 +30,11 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6 lg:mt-8">
-              <p className="text-beauty break-words text-foreground/80">
+            <div className="text-beauty-wrap mt-6 lg:mt-8">
+              <p className="text-beauty text-foreground/80">
                 癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
               </p>
-              <p className="text-beauty break-words text-foreground/80">
+              <p className="text-beauty text-foreground/80">
                 当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
                 初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
               </p>
@@ -141,12 +141,14 @@ export function MenuSection() {
                                       <ScalpTierBadge key={label}>{label}</ScalpTierBadge>
                                     ))}
                                   </div>
-                                  <p className="mt-4 text-[8px] font-medium uppercase tracking-[0.16em] text-muted-foreground/65 sm:text-[9px] sm:tracking-[0.18em]">
-                                    {item.labelEn}
-                                  </p>
-                                  <p className="mt-2 text-[12px] font-medium leading-snug tracking-[0.06em] text-foreground/92 sm:text-[13px]">
-                                    {item.name}
-                                  </p>
+                                  <div className="text-beauty-wrap text-left mt-4">
+                                    <p className="text-beauty text-muted-foreground/65 uppercase">
+                                      {item.labelEn}
+                                    </p>
+                                    <p className="text-beauty text-foreground/92">
+                                      {item.name}
+                                    </p>
+                                  </div>
                                   <ScalpCardDescription tier={tier} />
                                   <div className="mt-4 flex flex-wrap items-baseline gap-x-2 gap-y-1 sm:justify-end">
                                     <span

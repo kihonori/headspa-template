@@ -23,6 +23,14 @@ export function ReasonsSection() {
             <h2 className="mt-6 text-center text-lg leading-[1.8] tracking-[0.12em] text-foreground sm:text-xl">
               ゆう～MEGURI～が選ばれる理由
             </h2>
+            <div className="text-beauty-wrap mt-6">
+              <p className="text-beauty text-foreground/80">
+                頭皮から美しさを整える本質ケアを、完全個室の落ち着いた空間でご提供しています。
+              </p>
+              <p className="text-beauty text-foreground/80">
+                水やオイルを使わないドライ施術だからこそ、頭皮ケアと深いリラクゼーションを両立できます。
+              </p>
+            </div>
           </div>
         </FadeIn>
 

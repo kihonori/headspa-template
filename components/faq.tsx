@@ -66,6 +66,14 @@ export function Faq() {
             <span className="text-sm font-medium tracking-[0.5em] text-gold/80 sm:text-base">
               よくある質問
             </span>
+            <div className="text-beauty-wrap mt-6">
+              <p className="text-beauty text-foreground/80">
+                初めての方でも安心してご利用いただけるよう、よくいただくご質問をまとめています。
+              </p>
+              <p className="text-beauty text-foreground/80">
+                育毛ケアや施術の流れ、予約方法など、ご不安な点の解消にお役立てください。
+              </p>
+            </div>
           </div>
         </FadeIn>
 
@@ -85,7 +93,9 @@ export function Faq() {
                 </AccordionTrigger>
                 <AccordionContent className="pb-6 pl-6 text-muted-foreground md:pl-7">
                   <span className="mr-2 shrink-0 text-[11px] tracking-[0.1em] text-gold/40">A.</span>
-                  <span className="text-beauty break-words">{faq.a}</span>
+                  <div className="text-beauty-wrap">
+                    <p className="text-beauty">{faq.a}</p>
+                  </div>
                 </AccordionContent>
               </AccordionItem>
             ))}

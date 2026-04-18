@@ -34,15 +34,23 @@ export function Hero() {
               〜MEGURI〜
             </motion.h1>
 
-            {/* 2. メインコピー */}
-            <motion.p
+            {/* 2. メインコピー / 5. サブコピー */}
+            <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.42, ease }}
-              className="mx-auto mt-7 w-full max-w-[20rem] text-[13px] leading-[1.95] tracking-[0.06em] text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)] sm:mt-8 sm:max-w-md sm:text-sm sm:leading-[1.9] sm:tracking-[0.07em] md:mt-10 md:max-w-xl md:text-lg md:leading-[1.82] md:tracking-[0.08em] lg:max-w-2xl lg:text-xl lg:leading-[1.76]"
+              className="text-beauty-wrap mt-7 sm:mt-8 md:mt-10"
             >
-              頭皮から美しさを整え、髪も心も満たされるドライヘッドスパ専門店
-            </motion.p>
+              <p className="text-beauty text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
+                頭皮から美しさを整え、髪も心も満たされるドライヘッドスパ専門店
+              </p>
+              <p
+                className="text-beauty font-normal text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
+                style={{ WebkitTextStroke: "0.45px rgba(0,0,0,0.35)", paintOrder: "stroke fill" }}
+              >
+                日常に静かな贅沢を
+              </p>
+            </motion.div>
 
             {/* 3. コンセプト3つ（スマホ縦 / md〜横） */}
             <motion.ul
@@ -72,26 +80,15 @@ export function Hero() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.58, ease }}
-              className="mx-auto mt-8 w-full max-w-md md:mt-10"
+              className="text-beauty-wrap mt-8 md:mt-10"
             >
-              <p className="text-[12px] font-semibold leading-snug tracking-[0.1em] text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] sm:text-[13px] sm:tracking-[0.12em] md:text-sm md:tracking-[0.14em]">
+              <p className="text-beauty font-semibold text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
                 5月7日（木）NEW OPEN
               </p>
-              <p className="mt-2 text-[11px] font-semibold leading-snug tracking-[0.08em] text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)] sm:mt-2 sm:text-xs sm:tracking-[0.1em] md:text-[13px]">
+              <p className="text-beauty font-semibold text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
                 先行予約受付中
               </p>
             </motion.div>
-
-            {/* 5. サブコピー */}
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.95, delay: 0.66, ease }}
-              className="mt-8 text-[15px] font-normal leading-relaxed tracking-[0.12em] text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)] sm:mt-9 sm:text-base sm:tracking-[0.14em] md:mt-10 md:text-lg md:tracking-[0.1em]"
-              style={{ WebkitTextStroke: "0.45px rgba(0,0,0,0.35)", paintOrder: "stroke fill" }}
-            >
-              日常に静かな贅沢を
-            </motion.p>
 
             {/* 6. 予約ボタン */}
             <motion.div
