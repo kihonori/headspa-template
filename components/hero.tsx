@@ -17,7 +17,7 @@ export function Hero() {
           alt="ドライヘッドスパ　ゆう〜MEGURI〜"
           fill
           priority
-          className="z-0 object-cover object-[center_10%] md:object-center"
+          className="z-0 object-cover object-[70%_center] md:object-center"
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/25 md:bg-black/50" />
