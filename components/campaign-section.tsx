@@ -40,8 +40,12 @@ export function CampaignSection() {
               </div>
             </div>
             <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6">
-              <p className="text-beauty break-words text-foreground/75">
-                数量限定ではございますが、ご新規様特典をご用意しております。この機会をぜひお見逃しなく。
+              <p className="text-beauty break-words text-foreground/75 leading-relaxed">
+                数量限定ではございますが、
+                <br />
+                ご新規様特典をご用意しております。
+                <br />
+                この機会をぜひお見逃しなく。
               </p>
             </div>
           </div>
