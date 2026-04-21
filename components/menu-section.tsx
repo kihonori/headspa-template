@@ -38,8 +38,11 @@ export function MenuSection() {
                 <br />
                 目的に合わせて最適な施術をご用意しています。
               </p>
-              <p className="text-lp text-foreground/80">
-                当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
+              <p className="text-lp text-foreground/80 leading-relaxed text-center">
+                当店では、お悩みやご希望に合わせて選べる
+                <br />
+                4つのコースをご用意しております。
+                <br />
                 初めての方から本格的に改善を目指す方まで、段階的に最適なケアをお選びいただけます。
               </p>
             </div>
