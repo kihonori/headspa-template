@@ -24,11 +24,15 @@ export function ReasonsSection() {
               ゆう～MEGURI～が選ばれる理由
             </h2>
             <div className="text-lp space-y-4 mt-6">
-              <p className="text-lp text-foreground/80">
-                頭皮から美しさを整える本質ケアを、完全個室の落ち着いた空間でご提供しています。
+              <p className="text-lp text-foreground/80 leading-relaxed">
+                頭皮から美しさを整える本質ケアを、
+                <br />
+                完全個室の落ち着いた空間でご提供しています。
               </p>
-              <p className="text-lp text-foreground/80">
-                水やオイルを使わないドライ施術だからこそ、頭皮ケアと深いリラクゼーションを両立できます。
+              <p className="text-lp text-foreground/80 leading-relaxed">
+                水やオイルを使わないドライ施術だからこそ、
+                <br />
+                頭皮ケアと深いリラクゼーションを両立できます。
               </p>
             </div>
           </div>
