@@ -31,8 +31,12 @@ export function MenuSection() {
               メニュー
             </span>
             <div className="text-lp space-y-4 mt-6">
-              <p className="text-lp text-foreground/80">
-                癒しだけで終わらない。頭皮ケア・育毛ケア・深いリラクゼーションまで、目的に合わせて最適な施術をご用意しています。
+              <p className="text-lp text-foreground/80 leading-relaxed text-center">
+                癒しだけで終わらない。
+                <br />
+                頭皮ケア・育毛ケア・深いリラクゼーションまで、
+                <br />
+                目的に合わせて最適な施術をご用意しています。
               </p>
               <p className="text-lp text-foreground/80">
                 当店では、お悩みやご希望に合わせて選べる4つのコースをご用意しております。
