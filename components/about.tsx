@@ -45,14 +45,20 @@ export function About() {
               <p className="text-beauty break-words text-foreground/78">
                 福岡市東区の完全個室ドライヘッドスパ専門店 ゆう〜MEGURI〜。
               </p>
-              <p className="text-beauty break-words text-foreground/78">
-                水やオイルを使わない完全ドライ施術で、頭皮ケア・育毛ケア・深いリラクゼーションを丁寧にサポートいたします。
+              <p className="text-beauty break-words text-foreground/80 leading-relaxed">
+                水やオイルを使わない完全ドライ施術で、
+                <br />
+                頭皮ケア・育毛ケア・深いリラクゼーションを丁寧にサポートいたします。
               </p>
-              <p className="text-beauty break-words text-foreground/78">
-                1日4名様限定、完全予約制。落ち着いた空間で、ゆっくりお過ごしください。
+              <p className="text-beauty break-words text-foreground/80 leading-relaxed">
+                1日4名様限定、完全予約制。
+                <br />
+                落ち着いた空間で、ゆっくりお過ごしください。
               </p>
-              <p className="text-beauty break-words text-foreground/78">
-                当店は「頭皮から美しさを整える」をコンセプトに、癒しだけで終わらない施術をご提供しています。
+              <p className="text-beauty break-words text-foreground/80 leading-relaxed">
+                当店は「頭皮から美しさを整える」をコンセプトに、
+                <br />
+                癒しだけで終わらない施術をご提供しています。
               </p>
             </div>
           </div>
