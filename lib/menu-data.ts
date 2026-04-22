@@ -62,7 +62,7 @@ export const menus: Menu[] = [
       },
       {
         labelEn: "SCALP CARE | LIGHT",
-        name: "頭皮ケア（ベーシック）",
+        name: "ヒト幹細胞 頭皮ケア（低濃度）",
         tier: "light",
         detail: "",
         duration: "90min",

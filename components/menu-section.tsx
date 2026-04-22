@@ -174,7 +174,16 @@ export function MenuSection() {
                                     ))}
                                   </div>
                                   <div className="text-beauty-wrap text-left mt-4">
-                                    <p className="text-beauty text-muted-foreground/65 uppercase">
+                                    <p
+                                      className="
+text-gold
+text-lg md:text-xl
+font-semibold
+tracking-[0.15em]
+mb-2
+opacity-90
+"
+                                    >
                                       {item.labelEn}
                                     </p>
                                     <p className="text-beauty text-foreground/92">
