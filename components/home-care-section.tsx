@@ -13,19 +13,23 @@ export function HomeCareSection() {
           <span className="text-sm tracking-[0.45em] text-gold/75 sm:text-base">
             ホームケア
           </span>
-          <h2 className="mt-6 font-serif text-lg font-light tracking-[0.14em] text-foreground sm:text-xl md:text-2xl">
+          <p className="mt-6 text-center text-foreground/78 leading-relaxed md:leading-loose md:text-left">
             施術の効果を、日常へ
-          </h2>
-          <div className="text-lp space-y-4 mt-6">
-            <p className="text-lp text-foreground/78">
-              サロンでのケアとあわせてご活用いただけるホームケア商品をご用意しております。頭皮環境を整え、育毛ケアにもつながるよう、成分と使い心地にこだわったラインです。
-            </p>
-            <p className="text-lp text-foreground/78">
-              施術後の持続感を高め、ご自宅でも心地よいリチュアルとしてお使いいただけます。
-            </p>
-          </div>
-          <p className="mx-auto mt-10 max-w-lg border-t border-border/30 pt-8 text-xs leading-[1.95] tracking-[0.08em] text-muted-foreground/90 md:text-sm">
-            商品のご案内は、ご希望を伺ったうえで行います。無理な販売やしつこいお声がけはいたしませんので、どうぞご安心ください。
+            <br />
+            <br />
+            サロンでのケアとあわせてご活用いただけるホームケア商品をご用意しております。
+            <br />
+            頭皮環境を整え、育毛ケアにもつながるよう、成分と使い心地にこだわったラインです。
+            <br />
+            <br />
+            施術後の持続感を高め、ご自宅でも心地よいリチュアルとしてお使いいただけます。
+            <br />
+            <br />
+            <span className="text-sm opacity-70">
+              商品のご案内は、ご希望を伺ったうえで行います。
+              <br />
+              無理な販売やしつこいお声がけはいたしませんので、どうぞご安心ください。
+            </span>
           </p>
         </FadeIn>
       </div>
