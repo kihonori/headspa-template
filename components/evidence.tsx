@@ -4,7 +4,6 @@ import { useState, useRef, useEffect } from "react"
 import Image from "next/image"
 import { FadeIn } from "@/components/fade-in"
 import { ReserveCtaButtons } from "@/components/reserve-cta-buttons"
-import { SectionNextStep } from "@/components/section-next-step"
 
 const excluded = [3, 8, 21]
 const caseSummaries = [
@@ -167,18 +166,31 @@ export function Evidence() {
           )}
         </FadeIn>
 
-        <SectionNextStep
-          introText="5月7日（木）NEW OPENに向けて、先行予約受付中です"
-          leadText="Squareで先行予約・空き状況確認"
-          preCtaText={[
-            "現在オープン前につき、Square予約にて先行予約を承っております。",
-            "先行予約限定の特典をご用意しております。",
-            "ご不明点はLINEでもご相談いただけます。",
-          ]}
-          footnote="初めての方でも安心してご利用いただけます。まずはお気軽にご相談ください。"
-        >
-          <ReserveCtaButtons compact webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
-        </SectionNextStep>
+        <FadeIn delay={0.06}>
+          <div className="mx-auto mt-16 max-w-3xl border-t border-border/20 pt-14 text-center md:mt-20 md:pt-16 lg:mt-24 lg:pt-20">
+            <p className="mx-auto mb-8 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em]">
+              5月7日（木）NEW OPENに向けて、先行予約受付中です
+            </p>
+            <h2 className="text-3xl md:text-5xl leading-tight text-center">
+              Squareで先行予約・
+              <br />
+              空き状況確認
+            </h2>
+            <div className="text-lp space-y-4 mt-6">
+              <p className="text-lp text-foreground/80">現在オープン前につき、Square予約にて先行予約を承っております。</p>
+              <p className="text-lp text-foreground/80">先行予約限定の特典をご用意しております。</p>
+              <p className="text-lp text-foreground/80">ご不明点はLINEでもご相談いただけます。</p>
+            </div>
+            <div className="mt-6">
+              <ReserveCtaButtons compact webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
+            </div>
+            <p className="mx-auto max-w-2xl text-center mt-6 leading-relaxed md:leading-loose">
+              初めての方でも安心してご利用いただけます。
+              <br />
+              まずはお気軽にご相談ください。
+            </p>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )
