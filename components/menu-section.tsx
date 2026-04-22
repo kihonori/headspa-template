@@ -105,20 +105,43 @@ export function MenuSection() {
                                 </p>
                               </>
                             )}
-                            <p className="mt-3 text-sm leading-relaxed tracking-[0.04em] text-gold-light/85 md:text-base">
-                              {menu.id === "scalp"
-                                ? "頭皮ケア / 育毛目的の方におすすめ"
-                                : "深いリラックスを求める方におすすめ"}
-                            </p>
+                            {menu.id !== "scalp" ? (
+                              <p className="mt-3 text-sm leading-relaxed tracking-[0.04em] text-gold-light/85 md:text-base">
+                                深いリラックスを求める方におすすめ
+                              </p>
+                            ) : null}
                           </div>
                           <span className="mt-1 shrink-0 text-gold/60 transition-transform duration-300 group-hover:translate-x-1">
                             →
                           </span>
                         </div>
 
-                        <p className="mb-6 break-words text-base leading-relaxed tracking-[0.02em] text-muted-foreground md:text-lg line-clamp-3">
-                          {menu.descriptionParagraphs[0]}
-                        </p>
+                        {menu.id === "scalp" ? (
+                          <p className="mb-6 text-left text-sm leading-relaxed text-muted-foreground md:text-base">
+                            抜け毛・薄毛・分け目・ボリューム不足・ハリコシの低下が気になる方へ。
+                            <br />
+                            頭皮環境を根本から整える、当グループ人気No.1の育毛ヘッドスパです。
+                            <br />
+                            <br />
+                            高濃度ヒト幹細胞ケアを使用し、頭皮にうるおいを与えながら、
+                            <br />
+                            健やかで美しい髪を育む土台づくりを行います。
+                            <br />
+                            <br />
+                            完全個室・1日4名限定の落ち着いた空間で、
+                            <br />
+                            周囲を気にせず本格的な頭皮ケアを受けていただけます。
+                            <br />
+                            <br />
+                            お悩みの深さやご希望に合わせて、
+                            <br />
+                            3つのコースから最適なプランをご提案いたします。
+                          </p>
+                        ) : (
+                          <p className="mb-6 break-words text-base leading-relaxed tracking-[0.02em] text-muted-foreground md:text-lg line-clamp-3">
+                            {menu.descriptionParagraphs[0]}
+                          </p>
+                        )}
                       </div>
 
                       <div className="mt-auto border-t border-border/20 pt-6">
