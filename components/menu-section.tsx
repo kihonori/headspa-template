@@ -30,27 +30,28 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
-              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+            <div className="mt-6 mx-auto max-w-[90%] md:max-w-[640px]">
+              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 癒しだけで終わらない
-                <br />
+              </p>
+              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 頭皮ケア・育毛ケア・深いリラクゼーションまで
                 <br />
                 目的に合わせた最適な施術をご提供いたします
               </p>
-              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 当店では
                 <br />
                 お悩みやご希望に合わせて選べる
                 <br />
                 4つのコースをご用意しております
               </p>
-              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 初めての方から
                 <br />
                 本格的に改善を目指す方まで
               </p>
-              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 段階的に最適なケアを
                 <br />
                 お選びいただけます
