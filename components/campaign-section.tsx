@@ -29,15 +29,14 @@ export function CampaignSection() {
               </span>
             </div>
             <div className="my-10 w-full max-w-[600px] overflow-hidden rounded-[12px] border border-border/30 bg-zinc-800 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
-              <div className="relative aspect-[4/3] w-full">
-                <Image
-                  src="/images/campaign.png"
-                  alt="ご新規様特典・特別キャンペーン"
-                  fill
-                  className="object-contain"
-                  sizes="(max-width: 640px) 100vw, 600px"
-                />
-              </div>
+              <Image
+                src="/images/campaign.png"
+                alt="初回限定 特別価格キャンペーン"
+                width={1200}
+                height={900}
+                className="mx-auto h-auto w-full"
+                sizes="(max-width: 640px) 100vw, 600px"
+              />
             </div>
             <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
               <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
