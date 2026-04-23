@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils"
 
 type Props = {
   /** CTAブロック最上部（見出しより一段小さく・控えめに） */
-  introText?: string
+  introText?: ReactNode
   leadText: string
   children: ReactNode
   className?: string
-  preCtaText?: string[]
+  preCtaText?: ReactNode[]
   /** ボタン直下の補助文（例：完全予約制の案内） */
-  footnote?: string
+  footnote?: ReactNode
   leadClassName?: string
 }
 
@@ -34,8 +34,8 @@ export function SectionNextStep({
         )}
       >
         {introText ? (
-          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-8 sm:mb-9">
-            <p className="text-beauty break-words text-foreground/78">{introText}</p>
+          <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 text-center mb-8 sm:mb-9 mt-6">
+            <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">{introText}</p>
           </div>
         ) : null}
         <p
@@ -47,9 +47,9 @@ export function SectionNextStep({
           {leadText}
         </p>
         {preCtaText?.length ? (
-          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-6">
+          <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 text-center mb-6 mt-6">
             {preCtaText.map((line) => (
-              <p key={line} className="text-beauty break-words text-foreground/80">
+              <p key={String(line)} className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
                 {line}
               </p>
             ))}
@@ -59,8 +59,8 @@ export function SectionNextStep({
           {children}
         </div>
         {footnote ? (
-          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-8 sm:mt-9">
-            <p className="text-beauty break-words text-foreground/75">{footnote}</p>
+          <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 text-center mt-6">
+            <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">{footnote}</p>
           </div>
         ) : null}
       </div>

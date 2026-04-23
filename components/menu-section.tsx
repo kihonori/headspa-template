@@ -30,22 +30,22 @@ export function MenuSection() {
             <span className="text-base tracking-[0.5em] text-gold/80 sm:text-lg">
               メニュー
             </span>
-            <div className="text-lp space-y-4 mt-6">
-              <p className="text-lp text-foreground/80 leading-relaxed text-center">
-                癒しだけで終わらない。
+            <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
+              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                癒しだけで終わらない
                 <br />
-                頭皮ケア・育毛ケア・深いリラクゼーションまで、
+                頭皮ケア 育毛ケア 深いリラクゼーションまで
                 <br />
-                目的に合わせて最適な施術をご用意しています。
+                目的に合わせて最適な施術をご用意しています
               </p>
-              <p className="text-lp text-foreground/80 leading-relaxed text-center">
-                当店では、お悩みやご希望に合わせて選べる
+              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                当店では お悩みやご希望に合わせて選べる
                 <br />
-                4つのコースをご用意しております。
+                4つのコースをご用意しております
                 <br />
-                初めての方から本格的に改善を目指す方まで、
+                初めての方から本格的に改善を目指す方まで
                 <br />
-                段階的に最適なケアをお選びいただけます。
+                段階的に最適なケアをお選びいただけます
               </p>
             </div>
           </div>

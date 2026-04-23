@@ -57,6 +57,24 @@ const faqs = [
   },
 ]
 
+function RenderFaqBody({ text }: { text: string }) {
+  const lines = text
+    .split(/[、。]/)
+    .map((line) => line.trim())
+    .filter(Boolean)
+
+  return (
+    <>
+      {lines.map((line, idx) => (
+        <span key={`${line}-${idx}`}>
+          {line}
+          {idx < lines.length - 1 ? <br /> : null}
+        </span>
+      ))}
+    </>
+  )
+}
+
 export function Faq() {
   return (
     <section id="faq" className="bg-background py-16 md:py-24">
@@ -66,12 +84,16 @@ export function Faq() {
             <span className="text-sm font-medium tracking-[0.5em] text-gold/80 sm:text-base">
               よくある質問
             </span>
-            <div className="text-lp space-y-4 mt-6">
-              <p className="text-lp text-foreground/80">
-                初めての方でも安心してご利用いただけるよう、よくいただくご質問をまとめています。
+            <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
+              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                初めての方でも安心してご利用いただけるよう
+                <br />
+                よくいただくご質問をまとめています
               </p>
-              <p className="text-lp text-foreground/80">
-                育毛ケアや施術の流れ、予約方法など、ご不安な点の解消にお役立てください。
+              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                育毛ケアや施術の流れ 予約方法など
+                <br />
+                ご不安な点の解消にお役立てください
               </p>
             </div>
           </div>
@@ -93,8 +115,10 @@ export function Faq() {
                 </AccordionTrigger>
                 <AccordionContent className="pb-6 pl-6 text-muted-foreground md:pl-7">
                   <span className="mr-2 shrink-0 text-[11px] tracking-[0.1em] text-gold/40">A.</span>
-                  <div className="text-lp space-y-4">
-                    <p className="text-lp">{faq.a}</p>
+                  <div className="max-w-[340px] mx-auto md:max-w-[640px]">
+                    <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                      <RenderFaqBody text={faq.a} />
+                    </p>
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -108,7 +132,7 @@ export function Faq() {
             "ご希望の日時を選ぶだけで簡単予約",
             "頭皮や育毛のお悩みはLINEからも相談可能",
           ]}
-          footnote="※完全予約制のため事前予約をお願いいたします"
+          footnote="※完全予約制のため 事前予約をお願いいたします"
         >
           <ReserveCtaButtons compact />
         </SectionNextStep>

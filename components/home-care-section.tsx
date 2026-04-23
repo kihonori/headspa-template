@@ -13,32 +13,32 @@ export function HomeCareSection() {
           <span className="text-sm tracking-[0.45em] text-gold/75 sm:text-base">
             ホームケア
           </span>
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="leading-relaxed md:leading-loose">
-              施術の効果を、日常へ
+          <div className="max-w-[340px] mx-auto md:max-w-[640px] text-center">
+            <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+              施術の効果を 日常へ
             </p>
 
-            <p className="mt-8 leading-relaxed md:leading-loose">
+            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
               サロンでのケアとあわせてご活用いただける
               <br />
-              ホームケア商品をご用意しております。
+              ホームケア商品をご用意しております
               <br />
               <br />
-              頭皮環境を整え、育毛ケアにもつながるよう、
+              頭皮環境を整え 育毛ケアにもつながるよう
               <br />
-              成分と使い心地にこだわったラインです。
+              成分と使い心地にこだわったラインです
             </p>
 
-            <p className="mt-8 leading-relaxed md:leading-loose">
-              施術後の持続感を高め、
+            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+              施術後の持続感を高め
               <br />
-              ご自宅でも心地よいリチュアルとしてお使いいただけます。
+              ご自宅でも心地よいリチュアルとしてお使いいただけます
             </p>
 
-            <p className="mt-8 text-sm opacity-70 leading-relaxed">
-              商品のご案内は、ご希望を伺ったうえで行います。
+            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80 opacity-70">
+              商品のご案内は ご希望を伺ったうえで行います
               <br />
-              無理な販売やしつこいお声がけはいたしませんので、どうぞご安心ください。
+              無理な販売やしつこいお声がけはいたしませんので どうぞご安心ください
             </p>
           </div>
         </FadeIn>

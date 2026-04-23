@@ -39,13 +39,13 @@ export function CampaignSection() {
                 />
               </div>
             </div>
-            <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6">
-              <p className="text-beauty break-words text-foreground/75 leading-relaxed">
-                数量限定ではございますが、
+            <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
+              <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+                数量限定ではございますが
                 <br />
-                ご新規様特典をご用意しております。
+                ご新規様特典をご用意しております
                 <br />
-                この機会をぜひお見逃しなく。
+                この機会をぜひお見逃しなく
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export function CampaignSection() {
             "LINEで空き状況確認・先行予約も可能",
             "ご新規様はWEB予約からご利用いただけます",
           ]}
-          footnote="※完全予約制のため事前予約をお願いいたします"
+          footnote="※完全予約制のため 事前予約をお願いいたします"
         >
           <ReserveCtaButtons compact variant="web" />
         </SectionNextStep>
