@@ -58,15 +58,18 @@ export function About() {
                 1日4名様限定 完全予約制の特別空間
               </p>
               <p className="text-beauty break-words text-foreground/80 leading-relaxed">
-                当店は「頭皮から美しさを整える」をコンセプトに
-                <br />
-                癒しで終わらない 本質ケアの施術をご提供しています
+                <span className="block text-gold text-lg sm:text-xl">「頭皮から美しさを整える」</span>
+                <span className="block">癒しで終わらない本質ケアの施術を</span>
+                <span className="block">ご提供しています</span>
               </p>
             </div>
           </div>
         </FadeIn>
 
-        <SectionNextStep leadText={"\u5f53\u5e97\u306e\u65bd\u8853\u5185\u5bb9\u30fb\u6599\u91d1\u306f\u3053\u3061\u3089"}>
+        <SectionNextStep
+          leadText={"\u5f53\u5e97\u306e\u65bd\u8853\u5185\u5bb9\u30fb\u6599\u91d1\u306f\u3053\u3061\u3089"}
+          leadClassName="whitespace-nowrap text-xl sm:text-2xl md:text-4xl lg:text-5xl"
+        >
           <MenuScrollButton />
         </SectionNextStep>
       </div>
