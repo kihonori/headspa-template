@@ -33,8 +33,10 @@ export function ConcernsSection() {
 
         <FadeIn delay={0.18}>
           <div className="text-beauty space-y-4 md:space-y-6 text-center mt-10">
-            <p className="text-beauty break-words text-gold-light/90">
-              その原因は、頭皮環境の乱れやめぐりの低下かもしれません。
+            <p className="text-beauty break-words text-gold-light/90 text-center leading-relaxed">
+              その原因は 頭皮環境の乱れや
+              <br />
+              血流めぐりの低下かもしれません
             </p>
             <p className="text-beauty break-words text-foreground/88">
               当店では、頭皮環境を整えながら、頭皮から美しさを引き出す施術をご提供しています。
@@ -44,11 +46,13 @@ export function ConcernsSection() {
 
         <FadeIn delay={0.32}>
           <div className="mx-auto mt-12 max-w-2xl border border-border/25 bg-background/30 px-6 py-8">
-            <p className="text-sm leading-relaxed tracking-[0.12em] text-gold-light/90 sm:text-[15px]">
-              「癒し」で終わらない、頭皮から整える本質ケア
+            <p className="text-center text-xs leading-relaxed tracking-[0.1em] whitespace-nowrap text-gold-light/90 sm:text-sm">
+              「癒し で終わらない 頭皮から整える本質ケア」
             </p>
-            <ul className="mx-auto mt-6 flex max-w-xl flex-col gap-2.5 text-xs leading-[2] tracking-[0.08em] text-foreground/84 sm:text-sm">
-              <li>・頭皮ケア × 頭皮環境改善 × 深いリラクゼーション</li>
+            <p className="mt-4 text-center text-xs leading-relaxed tracking-[0.08em] whitespace-nowrap text-foreground/84 sm:text-sm">
+              頭皮ケア × 頭皮環境改善 × 深いリラクゼーション
+            </p>
+            <ul className="mx-auto mt-6 w-fit text-left flex flex-col gap-2.5 text-xs leading-[2] tracking-[0.08em] text-foreground/84 sm:text-sm">
               <li>・水やオイルを使わない完全ドライ施術</li>
               <li>・男性・女性どちらも利用可能</li>
             </ul>
