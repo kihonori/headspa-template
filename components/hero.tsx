@@ -42,7 +42,9 @@ export function Hero() {
               className="text-lp space-y-4 mt-6"
             >
               <p className="text-lp text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
-                頭皮から美しさを整え、髪も心も満たされるドライヘッドスパ専門店
+                頭皮から美しさを整え 髪も心も満たされる
+                <br className="block md:hidden" />
+                ドライヘッドスパ専門店
               </p>
               <p
                 className="text-lp font-normal text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
