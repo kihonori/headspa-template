@@ -50,7 +50,7 @@ export function ConcernsSection() {
               「癒し で終わらない 頭皮から整える本質ケア」
             </p>
             <p className="mt-4 text-center text-xs leading-relaxed tracking-[0.08em] whitespace-nowrap text-foreground/84 sm:text-sm">
-              頭皮ケア × 頭皮環境改善 × 深いリラクゼーション
+              育毛ケア × 頭皮環境改善 × 深いリラクゼーション
             </p>
             <ul className="mx-auto mt-6 w-fit text-left flex flex-col gap-2.5 text-xs leading-[2] tracking-[0.08em] text-foreground/84 sm:text-sm">
               <li>・水やオイルを使わない完全ドライ施術</li>
