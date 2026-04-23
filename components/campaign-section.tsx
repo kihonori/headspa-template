@@ -28,14 +28,14 @@ export function CampaignSection() {
                 特別価格
               </span>
             </div>
-            <div className="w-full overflow-hidden rounded-sm border border-border/30 bg-zinc-800">
+            <div className="my-10 w-full max-w-[600px] overflow-hidden rounded-[12px] border border-border/30 bg-zinc-800 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
               <div className="relative aspect-[4/3] w-full">
                 <Image
-                  src="/images/card-2-newcomer.png"
+                  src="/images/campaign.png"
                   alt="ご新規様特典・特別キャンペーン"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 100vw, 576px"
+                  sizes="(max-width: 640px) 100vw, 600px"
                 />
               </div>
             </div>
