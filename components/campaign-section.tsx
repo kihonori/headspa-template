@@ -56,9 +56,21 @@ export function CampaignSection() {
           preCtaText={[
             "ご希望の日時を選ぶだけで簡単予約",
             "LINEで空き状況確認・先行予約も可能",
-            "ご新規様はWEB予約からご利用いただけます",
+            <>
+              <span className="inline-block leading-[1.8]">
+                ご新規様はWEB予約から
+                <br />
+                ご利用いただけます
+              </span>
+            </>,
           ]}
-          footnote="※完全予約制のため 事前予約をお願いいたします"
+          footnote={
+            <span className="inline-block leading-[1.8]">
+              ※完全予約制のため事前予約を
+              <br />
+              お願いいたします
+            </span>
+          }
         >
           <ReserveCtaButtons compact variant="web" />
         </SectionNextStep>
