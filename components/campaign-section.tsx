@@ -30,7 +30,7 @@ export function CampaignSection() {
             </div>
             <div className="my-10 w-full max-w-[600px] overflow-hidden rounded-[12px] border border-border/30 bg-zinc-800 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
               <Image
-                src="/images/campaign.png"
+                src="/images/campaign.png.png"
                 alt="初回限定 特別価格キャンペーン"
                 width={1200}
                 height={900}
