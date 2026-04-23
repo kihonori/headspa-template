@@ -3,8 +3,8 @@
 import { FadeIn } from "@/components/fade-in"
 
 const reasons = [
+  "育毛ケア × 頭皮環境改善に特化した専門施術",
   "頭皮から美しさを整えるドライヘッドスパ専門店",
-  "水やオイルを使わない完全ドライ施術",
   "完全個室・1日4名限定の上質空間",
   "頭皮ケアと深いリラクゼーションを同時に提供",
   "男性・女性どちらも利用可能",
@@ -46,7 +46,9 @@ export function ReasonsSection() {
                   <span className="mt-0.5 text-[10px] tracking-[0.1em] text-gold/70">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
-                  <span>{reason}</span>
+                  <span className={idx < 2 ? "whitespace-nowrap text-[12px] sm:text-[14px]" : ""}>
+                    {reason}
+                  </span>
                 </p>
               </div>
             </FadeIn>
