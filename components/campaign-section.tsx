@@ -85,9 +85,9 @@ export function CampaignSection() {
           ]}
           footnote={
             <span className="inline-block leading-[1.8]">
-              ※完全予約制のため事前予約を
+              ※完全予約制のため
               <br />
-              お願いいたします
+              事前予約をお願いいたします
             </span>
           }
         >
