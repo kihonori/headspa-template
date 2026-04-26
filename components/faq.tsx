@@ -134,7 +134,13 @@ export function Faq() {
             "ご希望の日時を選ぶだけで簡単予約",
             "頭皮や育毛のお悩みはLINEからも相談可能",
           ]}
-          footnote="※完全予約制のため 事前予約をお願いいたします"
+          footnote={
+            <>
+              ※完全予約制のため
+              <br />
+              事前予約をお願いいたします
+            </>
+          }
         >
           <ReserveCtaButtons compact />
         </SectionNextStep>

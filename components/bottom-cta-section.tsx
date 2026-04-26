@@ -12,7 +12,11 @@ export function BottomCtaSection() {
             <p className="text-lg leading-snug tracking-[0.06em] text-gold-light/90 md:text-2xl">5月7日（木）オープン / 先行予約受付中</p>
             <p>現在オープン前につき、Square予約にて先行予約を承っております。</p>
             <p>当店は完全個室のため、周りを気にせずリラックスしていただけます。</p>
-            <p className="pt-1 text-sm leading-relaxed text-foreground/75 md:text-base">※完全予約制のため事前予約をお願いいたします</p>
+            <p className="pt-1 text-sm leading-relaxed text-foreground/75 md:text-base">
+              ※完全予約制のため
+              <br />
+              事前予約をお願いいたします
+            </p>
           </div>
           <ReserveCtaButtons webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
           <div className="text-beauty space-y-4 md:space-y-6 text-center mt-6 sm:mt-8">

@@ -17,7 +17,11 @@ export function BookingCtaSection() {
             <p>ご予約は30秒で完了します</p>
             <p>ご希望の日時を選ぶだけで簡単予約</p>
             <p>頭皮や育毛のお悩みはLINEからも相談可能</p>
-            <p className="pt-1 text-foreground/75">※完全予約制のため事前予約をお願いいたします</p>
+            <p className="pt-1 text-foreground/75">
+              ※完全予約制のため
+              <br />
+              事前予約をお願いいたします
+            </p>
           </div>
         </FadeIn>
         <FadeIn delay={0.15}>
