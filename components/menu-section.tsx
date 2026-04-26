@@ -31,13 +31,16 @@ export function MenuSection() {
               メニュー
             </span>
             <div className="mt-6 mx-auto max-w-[90%] md:max-w-[640px]">
-              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
-                癒しだけで終わらない
-              </p>
-              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
-                頭皮ケア・育毛ケア・深いリラクゼーションまで
+              <p className="mb-4 text-center text-base md:text-lg leading-relaxed tracking-[0.05em] text-foreground/80">
+                癒しだけでは終わらない
                 <br />
-                目的に合わせた最適な施術をご提供いたします
+                ・頭皮ケア
+                <br />
+                ・育毛ケア
+                <br />
+                ・深いリラクゼーション
+                <br />
+                目的に合わせた最適な施術をご提供します
               </p>
               <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 当店では
