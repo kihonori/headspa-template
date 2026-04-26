@@ -32,11 +32,11 @@ export function Hero() {
               className="text-[2rem] font-medium leading-none tracking-[0.14em] text-gold-light/95 drop-shadow-[0_2px_12px_rgba(0,0,0,0.92)] sm:text-5xl sm:tracking-[0.15em] md:text-6xl md:tracking-[0.12em] lg:text-7xl"
             >
               <Image
-                src="/images/brand-logo.svg"
+                src="/images/logo-meguri-transparent.png"
                 alt="MEGURI ロゴ"
                 width={96}
                 height={96}
-                className="mx-auto mb-5 w-16 sm:w-20 md:mb-6 md:w-24 opacity-90"
+                className="mx-auto mb-6 w-16 sm:w-20 md:w-24 opacity-90"
                 priority
               />
               〜MEGURI〜
