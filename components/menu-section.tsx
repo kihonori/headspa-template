@@ -147,7 +147,7 @@ export function MenuSection() {
                             3つのコースから最適なプランをご提案いたします。
                           </p>
                         ) : (
-                          <p className="mb-6 break-words text-base leading-relaxed tracking-[0.02em] text-muted-foreground md:text-lg line-clamp-3">
+                          <p className="mb-6 break-words whitespace-pre-line text-base leading-relaxed tracking-[0.02em] text-muted-foreground md:text-lg">
                             {menu.descriptionParagraphs[0]}
                           </p>
                         )}
@@ -235,13 +235,25 @@ opacity-90
                                 <>
                                   <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
                                     <div className="min-w-0 flex-1 text-left">
+                                      {menu.id === "relaxation" && item.detail ? (
+                                        <p className="text-[11px] tracking-[0.1em] text-muted-foreground">
+                                          {item.detail}
+                                        </p>
+                                      ) : null}
                                       <span className="text-[11px] tracking-[0.05em] text-foreground/70">
                                         {item.name}
                                       </span>
-                                      {item.detail ? (
+                                      {item.detail && menu.id !== "relaxation" ? (
                                         <span className="ml-1 text-[10px] text-muted-foreground">
                                           ({item.detail})
                                         </span>
+                                      ) : null}
+                                      {menu.id === "relaxation" ? (
+                                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground/80 break-words text-center sm:text-left">
+                                          頭・首・肩の深層筋にアプローチし
+                                          <br />
+                                          深いリラックスへ導く本格リラクゼーションコース
+                                        </p>
                                       ) : null}
                                     </div>
                                     <div className="flex shrink-0 items-baseline gap-1.5 sm:justify-end">
