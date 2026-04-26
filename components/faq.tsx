@@ -86,7 +86,9 @@ export function Faq() {
             </span>
             <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 mt-6">
               <p className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
-                初めての方でも安心してご利用いただけるよう
+                初めての方でも安心して
+                <br />
+                ご利用いただけるよう
                 <br />
                 よくいただくご質問をまとめています
               </p>
