@@ -233,43 +233,64 @@ opacity-90
                                 </>
                               ) : (
                                 <>
-                                  <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
-                                    <div className="min-w-0 flex-1 text-left">
-                                      {menu.id === "relaxation" && item.detail ? (
-                                        <p className="text-[11px] tracking-[0.1em] text-muted-foreground">
+                                  {menu.id === "relaxation" ? (
+                                    <div className="text-center">
+                                      {item.detail ? (
+                                        <p className="text-gold text-lg md:text-xl font-semibold tracking-[0.15em] mb-2 opacity-90 uppercase">
                                           {item.detail}
                                         </p>
                                       ) : null}
-                                      <span className="text-[11px] tracking-[0.05em] text-foreground/70">
+                                      <p className="text-beauty text-foreground/92">
                                         {item.name}
-                                      </span>
-                                      {item.detail && menu.id !== "relaxation" ? (
-                                        <span className="ml-1 text-[10px] text-muted-foreground">
-                                          ({item.detail})
+                                      </p>
+                                      <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
+                                        頭・首・肩の深層筋にアプローチし
+                                        <br />
+                                        深いリラックスへ導く本格リラクゼーションコース
+                                      </p>
+                                      <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
+                                        対象：頭・首・肩まわりの疲れやストレスをケアしたい方
+                                      </p>
+                                      <div className="mt-4 flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1 sm:justify-end">
+                                        <span className="text-base font-light tracking-[0.08em] text-gold">
+                                          {formatPrice(item.price)}
                                         </span>
-                                      ) : null}
-                                      {menu.id === "relaxation" ? (
-                                        <p className="mt-2 text-sm leading-relaxed text-muted-foreground/80 break-words text-center sm:text-left">
-                                          頭・首・肩の深層筋にアプローチし
-                                          <br />
-                                          深いリラックスへ導く本格リラクゼーションコース
-                                        </p>
-                                      ) : null}
+                                        <span className="text-[10px] tracking-[0.08em] text-gold/90">円</span>
+                                        <span className="text-[9px] text-muted-foreground/45">（税込）</span>
+                                        <span className="text-[9px] text-muted-foreground/55">
+                                          / {formatDuration(item.duration)}
+                                        </span>
+                                      </div>
                                     </div>
-                                    <div className="flex shrink-0 items-baseline gap-1.5 sm:justify-end">
-                                      <span className="text-base font-light tracking-[0.08em] text-gold">
-                                        {formatPrice(item.price)}
-                                      </span>
-                                      <span className="text-[10px] tracking-[0.08em] text-gold/90">円</span>
-                                      <span className="text-[9px] text-muted-foreground/45">（税込）</span>
-                                      <span className="text-[9px] text-muted-foreground/55">
-                                        / {formatDuration(item.duration)}
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
-                                    対象：頭・首・肩まわりの疲れやストレスをケアしたい方
-                                  </p>
+                                  ) : (
+                                    <>
+                                      <div className="flex flex-col gap-1.5 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
+                                        <div className="min-w-0 flex-1 text-left">
+                                          <span className="text-[11px] tracking-[0.05em] text-foreground/70">
+                                            {item.name}
+                                          </span>
+                                          {item.detail ? (
+                                            <span className="ml-1 text-[10px] text-muted-foreground">
+                                              ({item.detail})
+                                            </span>
+                                          ) : null}
+                                        </div>
+                                        <div className="flex shrink-0 items-baseline gap-1.5 sm:justify-end">
+                                          <span className="text-base font-light tracking-[0.08em] text-gold">
+                                            {formatPrice(item.price)}
+                                          </span>
+                                          <span className="text-[10px] tracking-[0.08em] text-gold/90">円</span>
+                                          <span className="text-[9px] text-muted-foreground/45">（税込）</span>
+                                          <span className="text-[9px] text-muted-foreground/55">
+                                            / {formatDuration(item.duration)}
+                                          </span>
+                                        </div>
+                                      </div>
+                                      <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
+                                        対象：頭・首・肩まわりの疲れやストレスをケアしたい方
+                                      </p>
+                                    </>
+                                  )}
                                 </>
                               )}
                             </div>
