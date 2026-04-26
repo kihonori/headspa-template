@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 type Props = {
   /** CTAブロック最上部（見出しより一段小さく・控えめに） */
   introText?: ReactNode
-  leadText: string
+  leadText: ReactNode
   children: ReactNode
   className?: string
   preCtaText?: ReactNode[]

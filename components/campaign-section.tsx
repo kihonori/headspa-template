@@ -51,10 +51,29 @@ export function CampaignSection() {
         </FadeIn>
 
         <SectionNextStep
-          leadText="ご予約は30秒で完了します"
+          introText={
+            <span className="inline-block leading-relaxed md:leading-loose">
+              5月7日（木）NEW OPENに向けて
+              <br />
+              先行予約受付中です
+            </span>
+          }
+          leadText={
+            <>
+              Squareで
+              <br />
+              先行予約・空き状況確認
+            </>
+          }
           className="max-w-3xl"
           preCtaText={[
-            "ご希望の日時を選ぶだけで簡単予約",
+            <>
+              <span className="inline-block leading-relaxed md:leading-loose">
+                現在オープン前につき、Square予約にて
+                <br />
+                先行予約を承っております。
+              </span>
+            </>,
             "LINEで空き状況確認・先行予約も可能",
             <>
               <span className="inline-block leading-[1.8]">
