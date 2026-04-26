@@ -249,18 +249,22 @@ opacity-90
                                       <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
                                         頭・首・肩の深層筋にアプローチし
                                         <br />
-                                        深いリラックスへ導く本格リラクゼーションコース
+                                        深いリラックスへ導く
+                                        <br />
+                                        本格リラクゼーションコース
                                       </p>
                                       <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground/80 break-words">
-                                        対象：頭・首・肩まわりの疲れやストレスをケアしたい方
+                                        対象：頭・首・肩まわりの疲れやストレスを
+                                        <br />
+                                        ケアしたい方
                                       </p>
-                                      <div className="mt-4 flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1 sm:justify-end">
-                                        <span className="text-base font-light tracking-[0.08em] text-gold">
+                                      <div className="mt-4 flex flex-wrap items-baseline gap-x-2 gap-y-1 sm:justify-end">
+                                        <span className="text-base font-light tabular-nums tracking-[0.07em] text-foreground/88">
                                           {formatPrice(item.price)}
                                         </span>
-                                        <span className="text-[10px] tracking-[0.08em] text-gold/90">円</span>
+                                        <span className="text-[10px] tracking-[0.08em] text-foreground/65">円</span>
                                         <span className="text-[9px] text-muted-foreground/45">（税込）</span>
-                                        <span className="text-[9px] text-muted-foreground/55">
+                                        <span className="text-[9px] text-muted-foreground/50">
                                           / {formatDuration(item.duration)}
                                         </span>
                                       </div>
