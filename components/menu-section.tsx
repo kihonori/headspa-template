@@ -116,7 +116,7 @@ export function MenuSection() {
                             )}
                             {menu.id !== "scalp" ? (
                               <p className="mt-3 text-sm leading-relaxed tracking-[0.04em] text-gold-light/85 md:text-base">
-                                深いリラックスを求める方におすすめ
+                                深いリラックスと癒しを求める方へ
                               </p>
                             ) : null}
                           </div>

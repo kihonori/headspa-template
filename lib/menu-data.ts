@@ -81,11 +81,11 @@ export const menus: Menu[] = [
   },
   {
     id: "relaxation",
-    tab: "リラクゼーション",
-    enTitle: "リラクゼーション ヘッドスパ",
+    tab: "極上ヘッドスパ",
+    enTitle: "Luxury Head Spa",
     image: "/images/relaxation-bg.png",
     descriptionParagraphs: [
-      "頭・首・肩の深層筋を丁寧にほぐし、深いリラックスへ導くドライヘッドスパ。",
+      "頭・首・肩の深層筋を丁寧にほぐし、心身ともにリラックスへ導く極上のドライヘッドスパ。",
       "ホットストーンや足湯を組み合わせ、日々の疲れをやさしく解消します。",
       "水やオイルを使わない完全ドライ施術のため、お着替え不要で気軽にご利用いただけます。",
     ],
