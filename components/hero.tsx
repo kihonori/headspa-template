@@ -41,10 +41,13 @@ export function Hero() {
               transition={{ duration: 0.9, delay: 0.42, ease }}
               className="text-lp space-y-4 mt-6"
             >
-              <p className="text-lp text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
-                頭皮から美しさを整え 髪も心も満たされる
-                <br className="block md:hidden" />
-                ドライヘッドスパ専門店
+              <p className="text-lp w-full text-center text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.88)]">
+                <span className="inline-block whitespace-nowrap">
+                  頭皮から美しさを整え 髪も心も満たされる
+                </span>
+                <br />
+                <br />
+                <span className="inline-block whitespace-nowrap">ドライヘッドスパ専門店</span>
               </p>
               <p
                 className="text-lp font-normal text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
