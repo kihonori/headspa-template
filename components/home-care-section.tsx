@@ -10,7 +10,7 @@ export function HomeCareSection() {
     >
       <div className="mx-auto max-w-2xl px-5 text-center md:px-8 lg:px-10">
         <FadeIn>
-          <span className="text-sm tracking-[0.45em] text-gold/75 sm:text-base">
+          <span className="mb-5 block text-gold text-base md:text-lg tracking-[0.25em]">
             ホームケア
           </span>
           <div className="max-w-[340px] mx-auto md:max-w-[640px] text-center">
@@ -18,10 +18,12 @@ export function HomeCareSection() {
               施術の効果を 日常へ
             </p>
 
-            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
-              サロンでのケアとあわせてご活用いただける
+            <p className="mt-8 text-base md:text-lg leading-relaxed md:leading-loose tracking-[0.08em] text-foreground/80">
+              サロンでのケアとあわせてご自宅で
               <br />
-              ホームケア商品をご用意しております
+              ご活用いただけるホームケア商品を
+              <br />
+              ご用意しております
               <br />
               <br />
               頭皮環境を整え 育毛ケアにもつながるよう
@@ -29,16 +31,22 @@ export function HomeCareSection() {
               成分と使い心地にこだわったラインです
             </p>
 
-            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+            <p className="mt-8 text-base md:text-lg leading-relaxed md:leading-loose tracking-[0.08em] text-foreground/80">
               施術後の持続感を高め
               <br />
-              ご自宅でも心地よいリチュアルとしてお使いいただけます
+              ご自宅でも心地よいリチュアルとして
+              <br />
+              お使いいただけます
             </p>
 
-            <p className="mt-8 text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80 opacity-70">
-              商品のご案内は ご希望を伺ったうえで行います
+            <p className="mt-8 text-base md:text-lg leading-relaxed md:leading-loose tracking-[0.08em] text-foreground/80 opacity-70">
+              ※商品のご希望を伺ったうえで
               <br />
-              無理な販売やしつこいお声がけはいたしませんので どうぞご安心ください
+              行います。
+              <br />
+              無理な販売やしつこいお声がけは
+              <br />
+              いたしませんのでご安心ください。
             </p>
           </div>
         </FadeIn>
