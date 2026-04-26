@@ -34,24 +34,24 @@ export function MenuSection() {
               <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 癒しだけで終わらない
               </p>
-              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
+              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 頭皮ケア・育毛ケア・深いリラクゼーションまで
                 <br />
                 目的に合わせた最適な施術をご提供いたします
               </p>
-              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
+              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 当店では
                 <br />
                 お悩みやご希望に合わせて選べる
                 <br />
                 4つのコースをご用意しております
               </p>
-              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
+              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 初めての方から
                 <br />
                 本格的に改善を目指す方まで
               </p>
-              <p className="mb-4 text-left text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
+              <p className="mb-4 text-center text-base md:text-lg leading-[1.8] tracking-[0.05em] text-foreground/80">
                 段階的に最適なケアを
                 <br />
                 お選びいただけます
