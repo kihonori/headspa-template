@@ -32,13 +32,13 @@ export function About() {
 
         <FadeIn delay={0.1}>
           <div className="text-center">
-            <div className="relative mx-auto mb-10 aspect-[4/3] w-full max-w-xl overflow-hidden rounded-sm border border-border/30">
+            <div className="relative mx-auto mb-12 aspect-[3/4] w-full max-w-md overflow-hidden rounded-xl border border-border/30 shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
               <Image
-                src="/images/about-interior.png"
+                src="/images/store-interior-new.jpg"
                 alt="\u5f53\u5e97\u306e\u65bd\u8853\u30eb\u30fc\u30e0"
                 fill
                 className="object-cover"
-                sizes="(max-width: 640px) 100vw, 576px"
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 70vw, 448px"
               />
             </div>
             <div className="text-beauty space-y-4 md:space-y-6 text-center">
