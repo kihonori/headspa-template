@@ -99,7 +99,13 @@ export function Hero() {
                 5月7日（木）NEW OPEN
               </p>
               <p className="text-lp font-semibold text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
-                先行予約受付中
+                予約受付中
+              </p>
+              <p className="mx-auto max-w-[22rem] text-center text-sm leading-relaxed text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] sm:text-base sm:leading-loose">
+                <span className="block">数量限定ではございますが</span>
+                <span className="block">ご新規様特典をご用意しております</span>
+                <span className="block mt-1 sm:mt-2">この機会をぜひ</span>
+                <span className="block">お見逃しなく</span>
               </p>
             </motion.div>
 
