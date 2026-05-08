@@ -26,8 +26,8 @@ export function ReasonsSection() {
         >
           <source src="/images/施術　動画①fcv3Robye13NyAxVdqEKLH_rxwyFVfVi-HOXsk5ITfg.MP4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/45 to-black/70" />
+        <div className="absolute inset-0 bg-black/48" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/38 via-black/26 to-black/52" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-5xl px-5 lg:px-10">
