@@ -47,9 +47,12 @@ export function SectionNextStep({
           {leadText}
         </p>
         {preCtaText?.length ? (
-          <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-4 text-center mb-6 mt-6">
-            {preCtaText.map((line) => (
-              <p key={String(line)} className="text-base md:text-lg leading-relaxed tracking-[0.08em] text-foreground/80">
+          <div className="max-w-[340px] mx-auto md:max-w-[640px] space-y-5 text-center mb-6 mt-6 md:space-y-6">
+            {preCtaText.map((line, i) => (
+              <p
+                key={typeof line === "string" ? `${line}-${i}` : i}
+                className="text-base md:text-lg leading-[1.95] tracking-[0.08em] text-foreground/80 md:leading-[2.1]"
+              >
                 {line}
               </p>
             ))}

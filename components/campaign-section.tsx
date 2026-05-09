@@ -60,18 +60,15 @@ export function CampaignSection() {
             <>
               Squareで
               <br />
-              先行予約・空き状況確認
+              予約・空き状況確認
             </>
           }
           className="max-w-3xl"
           preCtaText={[
-            <>
-              <span className="inline-block leading-relaxed md:leading-loose">
-                現在オープン前につき、Square予約にて
-                <br />
-                先行予約を承っております。
-              </span>
-            </>,
+            "NEW OPENにつき",
+            "数量限定ではございますが",
+            "ご予約いただいた方へ",
+            "特典をご用意しております",
             "LINEで空き状況確認・先行予約も可能",
             <>
               <span className="inline-block leading-[1.8]">

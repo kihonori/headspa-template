@@ -171,19 +171,24 @@ export function Evidence() {
             <p className="mx-auto mb-8 max-w-md text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em] whitespace-nowrap">
               5月7日（木）NEW OPEN
             </p>
-            <h2 className="text-3xl md:text-5xl leading-tight text-center">
+            <h2 className="text-3xl md:text-5xl leading-tight text-center tracking-[0.02em]">
               Squareで
               <br />
-              先行予約・空き状況確認
+              予約・空き状況確認
             </h2>
-            <div className="text-lp space-y-4 mt-6">
-              <p className="text-lp text-foreground/80 leading-relaxed md:leading-loose">
-                現在オープン前につき、Square予約にて
-                <br />
-                先行予約を承っております。
+            <div className="mx-auto mt-7 max-w-md space-y-4 px-2 text-[15px] leading-[2] tracking-[0.06em] text-foreground/82 md:mt-8 md:space-y-5 md:text-base md:leading-[2.05] md:tracking-[0.08em]">
+              <p className="text-balance text-center">
+                <span className="inline-block">NEW OPENにつき</span>
               </p>
-              <p className="text-lp text-foreground/80">先行予約限定の特典をご用意しております。</p>
-              <p className="text-lp text-foreground/80">ご不明点はLINEでもご相談いただけます。</p>
+              <p className="text-balance text-center">
+                <span className="inline-block">数量限定ではございますが</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">ご予約いただいた方へ</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">特典をご用意しております</span>
+              </p>
             </div>
             <div className="mt-6">
               <ReserveCtaButtons compact webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />

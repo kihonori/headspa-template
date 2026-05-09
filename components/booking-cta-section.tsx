@@ -17,7 +17,15 @@ export function BookingCtaSection() {
             <p className="text-sm tracking-[0.1em] text-gold-light/90 md:text-base md:tracking-[0.12em]">
               <span className="inline-block">5月7日（木）NEW OPEN</span>
             </p>
-            <div className="mx-auto mt-6 max-w-md space-y-3.5 px-2 text-[15px] leading-[1.85] tracking-[0.06em] text-foreground/82 md:mt-7 md:text-base md:leading-loose md:tracking-[0.08em]">
+            <h3 className="mt-8 text-center text-3xl leading-tight tracking-[0.02em] text-foreground md:mt-9 md:text-5xl">
+              Squareで
+              <br />
+              予約・空き状況確認
+            </h3>
+            <div className="mx-auto mt-7 max-w-md space-y-4 px-2 text-[15px] leading-[2] tracking-[0.06em] text-foreground/82 md:mt-8 md:space-y-5 md:text-base md:leading-[2.05] md:tracking-[0.08em]">
+              <p className="text-balance text-center">
+                <span className="inline-block">NEW OPENにつき</span>
+              </p>
               <p className="text-balance text-center">
                 <span className="inline-block">数量限定ではございますが</span>
               </p>
@@ -25,7 +33,7 @@ export function BookingCtaSection() {
                 <span className="inline-block">ご予約いただいた方へ</span>
               </p>
               <p className="text-balance text-center">
-                <span className="inline-block">特典をご用意しております。</span>
+                <span className="inline-block">特典をご用意しております</span>
               </p>
             </div>
           </div>
