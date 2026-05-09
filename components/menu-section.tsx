@@ -314,11 +314,20 @@ opacity-90
 
         <FadeIn delay={0.12}>
           <div className="mx-auto mt-10 max-w-3xl border border-border/30 bg-card/70 px-5 py-8 text-center md:px-8 md:py-10">
-            <p className="text-sm leading-snug tracking-[0.08em] text-gold-light/90 md:text-base">5月7日（木）オープン</p>
-            <p className="mt-2 text-2xl leading-tight tracking-[0.04em] text-foreground md:text-4xl">先行予約受付中</p>
-            <p className="mx-auto mt-4 max-w-3xl break-words text-base leading-relaxed tracking-[0.04em] text-foreground/80 md:text-lg">
-              現在オープン前につき、Square予約にて先行予約を受付しております。先行予約限定の特典をご用意しております。ご相談はLINEでも承ります。
+            <p className="text-sm leading-snug tracking-[0.1em] text-gold-light/90 md:text-base md:tracking-[0.12em]">
+              <span className="inline-block">5月7日（木）NEW OPEN</span>
             </p>
+            <div className="mx-auto mt-6 max-w-md space-y-3.5 px-2 text-[15px] leading-[1.85] tracking-[0.06em] text-foreground/82 md:mt-7 md:text-base md:leading-loose md:tracking-[0.08em]">
+              <p className="text-balance text-center">
+                <span className="inline-block">数量限定ではございますが</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">ご予約いただいた方へ</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">特典をご用意しております。</span>
+              </p>
+            </div>
             <div className="mt-6">
               <ReserveCtaButtons webLabel="Squareで先行予約する" lineLabel="LINEで相談する" />
             </div>

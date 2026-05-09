@@ -13,23 +13,29 @@ export function BookingCtaSection() {
           </h2>
         </FadeIn>
         <FadeIn delay={0.08}>
-          <div className="text-beauty space-y-4 md:space-y-6 text-center mb-10">
-            <p>ご予約は30秒で完了します</p>
-            <p>ご希望の日時を選ぶだけで簡単予約</p>
-            <p>頭皮や育毛のお悩みはLINEからも相談可能</p>
-            <p className="pt-1 text-foreground/75">
-              ※完全予約制のため
-              <br />
-              事前予約をお願いいたします
+          <div className="text-beauty mb-10 text-center md:mb-11">
+            <p className="text-sm tracking-[0.1em] text-gold-light/90 md:text-base md:tracking-[0.12em]">
+              <span className="inline-block">5月7日（木）NEW OPEN</span>
             </p>
+            <div className="mx-auto mt-6 max-w-md space-y-3.5 px-2 text-[15px] leading-[1.85] tracking-[0.06em] text-foreground/82 md:mt-7 md:text-base md:leading-loose md:tracking-[0.08em]">
+              <p className="text-balance text-center">
+                <span className="inline-block">数量限定ではございますが</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">ご予約いただいた方へ</span>
+              </p>
+              <p className="text-balance text-center">
+                <span className="inline-block">特典をご用意しております。</span>
+              </p>
+            </div>
           </div>
         </FadeIn>
         <FadeIn delay={0.15}>
           <ReserveCtaButtons />
         </FadeIn>
         <FadeIn delay={0.22}>
-          <div className="text-beauty space-y-4 md:space-y-6 text-center mt-10 sm:mt-12">
-            <p className="text-beauty break-words text-foreground/70">
+          <div className="mx-auto mt-10 max-w-2xl text-center sm:mt-12">
+            <p className="text-beauty text-sm leading-relaxed tracking-[0.05em] text-foreground/70 md:text-[15px]">
               Square予約ページにてご希望の日時を選択してご予約いただけます
             </p>
           </div>
