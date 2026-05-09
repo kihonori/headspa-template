@@ -52,10 +52,8 @@ export function CampaignSection() {
 
         <SectionNextStep
           introText={
-            <span className="inline-block leading-relaxed md:leading-loose">
-              5月7日（木）NEW OPENに向けて
-              <br />
-              先行予約受付中です
+            <span className="inline-block whitespace-nowrap leading-relaxed md:leading-loose">
+              5月7日（木）NEW OPEN
             </span>
           }
           leadText={

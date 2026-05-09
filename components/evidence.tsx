@@ -168,10 +168,8 @@ export function Evidence() {
 
         <FadeIn delay={0.06}>
           <div className="mx-auto mt-16 max-w-3xl border-t border-border/20 pt-14 text-center md:mt-20 md:pt-16 lg:mt-24 lg:pt-20">
-            <p className="mx-auto mb-8 max-w-md break-words text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em]">
-              5月7日（木）NEW OPENに向けて
-              <br />
-              先行予約受付中です
+            <p className="mx-auto mb-8 max-w-md text-sm leading-relaxed tracking-[0.12em] text-foreground/78 md:text-base sm:mb-9 sm:tracking-[0.14em] whitespace-nowrap">
+              5月7日（木）NEW OPEN
             </p>
             <h2 className="text-3xl md:text-5xl leading-tight text-center">
               Squareで
