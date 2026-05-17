@@ -23,20 +23,19 @@ export function NightRelaxation() {
             FRIDAY &amp; SATURDAY LIMITED
           </p>
 
-          <h3 className="mt-5 text-balance text-xl font-medium tracking-[0.18em] text-gold sm:text-2xl md:tracking-[0.22em] lg:text-[1.65rem]">
-            <span className="block">金・土限定</span>
-            <span className="mt-2 block tracking-[0.28em]">NIGHT RELAXATION</span>
+          <h3 className="mt-5 text-balance text-xl font-medium tracking-[0.14em] text-gold sm:text-2xl md:tracking-[0.18em] lg:text-[1.65rem]">
+            <span className="block tracking-[0.22em]">金・土限定</span>
+            <span className="mt-3 block text-lg font-normal tracking-[0.1em] text-gold-light/92 sm:text-xl sm:tracking-[0.12em]">
+              夜間施術も承っております
+            </span>
           </h3>
 
-          <div className="mt-8 max-w-md space-y-5 text-[15px] leading-[1.9] tracking-[0.06em] text-gold-light/88 md:mt-10 md:text-base md:leading-loose md:tracking-[0.08em]">
-            <p className="text-balance">
-              <span className="inline-block">金曜・土曜限定の</span>
-              <span className="inline-block">夜間リラクゼーションコースです。</span>
-            </p>
-            <p className="text-balance">
+          <div className="mt-9 max-w-md border-t border-gold/25 pt-9 text-[15px] leading-[1.9] tracking-[0.08em] text-gold-light/90 md:mt-10 md:pt-10 md:text-base md:leading-loose md:tracking-[0.1em]">
+            <p className="text-balance font-medium text-gold">
               <span className="inline-block">全コースに</span>
-              <span className="inline-block">フットアロマオイルマッサージが</span>
-              <span className="inline-block">含まれます。</span>
+            </p>
+            <p className="mt-2 text-balance text-lg tracking-[0.12em] text-gold-light/95 sm:text-xl sm:tracking-[0.14em]">
+              <span className="inline-block">フットアロマオイルマッサージ付き</span>
             </p>
           </div>
 
