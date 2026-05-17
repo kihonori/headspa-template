@@ -3,6 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { FadeIn } from "@/components/fade-in"
+import { NightRelaxation } from "@/components/night-relaxation"
 import { ReserveCtaButtons } from "@/components/reserve-cta-buttons"
 import { ScalpTierBadge } from "@/components/scalp-tier-badge"
 import type { MenuItem } from "@/lib/menu-data"
@@ -311,6 +312,8 @@ opacity-90
             </FadeIn>
           ))}
         </div>
+
+        <NightRelaxation />
 
         <FadeIn delay={0.12}>
           <div className="mx-auto mt-10 max-w-3xl border border-border/30 bg-card/70 px-5 py-8 text-center md:px-8 md:py-10">
