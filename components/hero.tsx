@@ -88,50 +88,47 @@ export function Hero() {
               ))}
             </motion.ul>
 
-            {/* 4. OPEN情報 */}
+            {/* 4. OPEN情報・ナイトコース */}
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.85, delay: 0.58, ease }}
-              className="text-lp space-y-4 mt-6"
+              className="mt-8 w-full max-w-md space-y-8 text-center md:mt-10 md:space-y-10"
             >
-              <p className="text-lp font-semibold text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
-                5月7日（木）NEW OPEN
-              </p>
-              <p className="text-lp font-semibold text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
-                予約受付中
-              </p>
-              <p className="mx-auto max-w-[22rem] text-center text-sm leading-relaxed text-gold-light/90 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)] sm:text-base sm:leading-loose">
-                <span className="block">数量限定ではございますが</span>
-                <span className="block">ご新規様特典をご用意しております</span>
-                <span className="block mt-1 sm:mt-2">この機会をぜひ</span>
-                <span className="block">お見逃しなく</span>
-              </p>
-            </motion.div>
+              <div className="space-y-5 md:space-y-6">
+                <p className="text-lp font-semibold tracking-[0.12em] text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
+                  5月7日（木）NEW OPEN
+                </p>
+                <p className="text-lp font-semibold tracking-[0.1em] text-gold-light/95 drop-shadow-[0_2px_10px_rgba(0,0,0,0.82)]">
+                  予約受付中
+                </p>
+              </div>
 
-            {/* 金・土限定ナイトコース */}
-            <motion.p
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.66, ease }}
-              className="mt-4 mx-auto max-w-[18rem] text-center text-[11px] leading-relaxed tracking-[0.1em] text-gold-light/72 drop-shadow-[0_2px_8px_rgba(0,0,0,0.88)] sm:max-w-xs sm:text-xs sm:tracking-[0.12em]"
-            >
-              <span className="inline-block">金・土限定</span>
-              <br />
-              <span className="inline-block">夜間施術も承っております</span>
-              <br />
-              <br />
-              <span className="inline-block">全コースに</span>
-              <br />
-              <span className="inline-block">フットアロマオイルマッサージ付き</span>
-            </motion.p>
+              <div className="mx-auto w-full max-w-xs space-y-5 border-t border-gold/20 pt-8 md:max-w-sm md:space-y-6 md:pt-10">
+                <div className="space-y-2">
+                  <p className="text-[11px] tracking-[0.28em] text-gold-light/80 sm:text-xs">
+                    金・土限定
+                  </p>
+                  <p className="text-xs tracking-[0.32em] text-gold-light/70 sm:text-[13px]">
+                    NIGHT RELAXATION
+                  </p>
+                </div>
+
+                <p className="text-[11px] leading-relaxed tracking-[0.08em] text-white/75 drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] sm:text-xs sm:leading-loose sm:tracking-[0.1em]">
+                  <span className="block">夜間施術のお客様へ</span>
+                  <span className="mt-2 block text-gold-light/65">
+                    フットアロマオイルマッサージ付き
+                  </span>
+                </p>
+              </div>
+            </motion.div>
 
             {/* 6. 予約ボタン */}
             <motion.div
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.76, ease }}
-              className="mt-8 w-full md:mt-10"
+              className="mt-10 w-full md:mt-12"
             >
               <ReserveCtaButtons
                 compact
