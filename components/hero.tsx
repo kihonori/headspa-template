@@ -109,12 +109,29 @@ export function Hero() {
               </p>
             </motion.div>
 
+            {/* 金・土限定ナイトコース */}
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.66, ease }}
+              className="mt-4 mx-auto max-w-[18rem] text-center text-[11px] leading-relaxed tracking-[0.1em] text-gold-light/72 drop-shadow-[0_2px_8px_rgba(0,0,0,0.88)] sm:max-w-xs sm:text-xs sm:tracking-[0.12em]"
+            >
+              <span className="inline-block">金・土限定</span>
+              <br />
+              <span className="inline-block">夜間施術も承っております</span>
+              <br />
+              <br />
+              <span className="inline-block">全コースに</span>
+              <br />
+              <span className="inline-block">フットアロマオイルマッサージ付き</span>
+            </motion.p>
+
             {/* 6. 予約ボタン */}
             <motion.div
               initial={{ opacity: 0, y: 22 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.76, ease }}
-              className="mt-10 w-full md:mt-12"
+              className="mt-8 w-full md:mt-10"
             >
               <ReserveCtaButtons
                 compact
